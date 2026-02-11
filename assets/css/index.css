@@ -1,0 +1,15 @@
+@import url("common/font.css");
+main {
+  position: relative;
+}
+main .main-spot {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(../img/main/main-background.png) 0 0/cover no-repeat;
+}
+main .main-spot div {
+  padding-top: 176px;
+}/*# sourceMappingURL=index.css.map */

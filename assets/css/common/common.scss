@@ -1,0 +1,120 @@
+@import url('./reset.css');
+@import url('common/font.css');
+
+// ------------------------------------------------------
+// -----------------------header---------------------------
+// ------------------------------------------------------
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: transform .3s ease;
+    
+    &.hide {
+        transform: translateY(-100%);
+    }
+}
+
+.header-inner {
+    max-width: 1424px;
+    margin: 0 auto;
+    font-family: 'GmarketSans';
+    font-weight: 300;
+    
+}
+
+.header-inner>div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+.header-inner>p {
+    margin: 0 auto;
+}
+
+.header-inner>div>nav>ul {
+    display: flex;
+    gap: 0 30px;
+    list-style: none;
+    text-align: center;
+    
+}
+
+.dropdown {
+    display: none;
+    // display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    gap: 14px;
+}
+
+
+// ------------------------------------------------------
+// -----------------------footer---------------------------
+// ------------------------------------------------------
+
+
+footer {
+    width: 100%;
+    padding: 90px 0;
+    background-color: #3A302E;
+    color: white;
+    font-family: 'GmarketSans';
+    font-weight: 300;
+}
+
+footer b {
+    padding-right: 4px;
+    font-family: 'GmarketSans';
+    font-weight: 500;
+}
+
+.footer-inner {
+    max-width: 1424px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.footer-inner span {
+    padding-bottom: 49px;
+    display: block;
+}
+
+.footer-inner ul {
+    line-height: 1.8;
+}
+
+.sns {
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 14px;
+
+}
+
+
+
+
+// ------------------------------------------------------
+// -----------------------floating-btn---------------------------
+// ------------------------------------------------------
+
+
+.floating-btn {
+    position: fixed;
+    right: 90px;
+    bottom: 100px;
+    z-index: 10;
+
+    span {
+        display: block;
+        padding: 16px 0;
+    }
+}
