@@ -1,0 +1,156 @@
+@import url('../../css/common/reset.css');
+
+
+
+
+.ben_main{
+    
+}
+
+.ben_M1{
+    margin: 0px auto 150px;
+    width: 1420px;
+    position: relative;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.25);
+    border-radius: 20px;
+    overflow: hidden;
+}
+.ben_M1 > p{
+    
+}
+.ben_M1 > p > img{
+    
+}
+.ben_M1 > div{
+    font-size: 97.74px;
+    font-weight: bold;
+    -webkit-text-stroke: 4px black;
+    color: white;
+    paint-order: stroke fill;
+    margin: 0;
+    position: absolute;
+    bottom: 50px; left: 50px;
+    text-shadow: 0 7px 6px rgba(0,0,0,0.3);
+}
+
+.ben_M2{}
+.ben_M2 > h2{
+    margin: 0 auto;
+    width: 1420px;
+    font-size: 80px;
+    color: #3A302E;
+    text-align: center;
+    background: url(../../img/benefits/Line\ 1.jpg) 0 bottom no-repeat;
+    padding-bottom: 30px;
+}
+
+
+.ben_M3{
+    margin: 114px 0;
+    padding: 95px 0;
+    background-color: #F3F3F3;
+    display: flex;
+    flex-direction: column;
+    gap: 65px;
+}
+.ben_M3 > p{
+    
+    font-size: 36px;
+    text-align: center;
+    color: #3A302E;
+}
+.ben_M3 > p > span{
+    color: #FF9D00;
+    font-weight: bold;
+}
+.ben_M3 > div{
+    width: 1035px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    margin: 0 auto;
+    gap: 100px;
+
+}
+.ben_M3 > div > div{
+    width: 278.09px; height: 278.09px;
+    background-color: #3A302E;
+    border-radius: 37.08px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    color: white;
+    font-weight: bold;
+}
+.ben_M3 > div > div>p{
+    text-align: center;
+    
+}
+.ben_M3 > div > div > p > svg{
+    fill: white;
+}
+.ben_M3 > div > div > div{
+    font-size: 24.21px;
+    text-align: center;
+}
+
+
+.ben_M3 > div > div:nth-of-type(1):hover{
+    background-color: #FFAE00;    
+    color: #3A302E;
+    transition: 0.3s;
+}
+.ben_M3 > div > div:nth-of-type(1):hover > p > svg{
+    fill: #3A302E;
+    transition: 0.3s;
+}
+
+.ben_M3 > div > div:nth-of-type(2):hover{
+    background-color: #FFAE00;    
+    color: #3A302E;
+    transition: 0.3s;
+}
+.ben_M3 > div > div:nth-of-type(2):hover > p > svg{
+    fill: #3A302E;
+    transition: 0.3s;
+}
+
+.ben_M3 > div > div:nth-of-type(3):hover{
+    background-color: #FFAE00;    
+    color: #3A302E;
+    transition: 0.3s;
+}
+.ben_M3 > div > div:nth-of-type(3):hover > p > svg{
+    fill: #3A302E;
+    transition: 0.3s;
+}
+
+.ben_M3 > div > div:nth-of-type(4):hover{
+    background-color: #FFAE00;    
+    color: #3A302E;
+    transition: 0.3s;
+}
+.ben_M3 > div > div:nth-of-type(4):hover > p > svg{
+    fill: #3A302E;
+    transition: 0.3s;
+}
+
+.ben_M3 > div > div:nth-of-type(5):hover{
+    background-color: #FFAE00;    
+    color: #3A302E;
+    transition: 0.3s;
+}
+.ben_M3 > div > div:nth-of-type(5):hover > p > svg{
+    fill: #3A302E;
+    transition: 0.3s;
+}
+
+.ben_M3 > div > div:nth-of-type(6):hover{
+    background-color: #FFAE00;    
+    color: #3A302E;
+    transition: 0.3s;
+}
+.ben_M3 > div > div:nth-of-type(6):hover > p > svg{
+    fill: #3A302E;
+    transition: 0.3s;
+}
