@@ -1,13 +1,13 @@
-@import url('../../css/common/reset.css');
+@import url(../common/common.css);
 
 
 
 
-.ben_main{
+.bnf_main{
     
 }
 
-.ben_M1{
+.bnf_M1{
     margin: 0px auto 150px;
     width: 1420px;
     position: relative;
@@ -15,13 +15,13 @@
     border-radius: 20px;
     overflow: hidden;
 }
-.ben_M1 > p{
+.bnf_M1 > p{
     
 }
-.ben_M1 > p > img{
+.bnf_M1 > p > img{
     
 }
-.ben_M1 > div{
+.bnf_M1 > div{
     font-size: 97.74px;
     font-weight: bold;
     -webkit-text-stroke: 4px black;
@@ -31,21 +31,23 @@
     position: absolute;
     bottom: 50px; left: 50px;
     text-shadow: 0 7px 6px rgba(0,0,0,0.3);
+    font-family: 'Hakgyoansim_PosterB';
 }
 
-.ben_M2{}
-.ben_M2 > h2{
+.bnf_M2{}
+.bnf_M2 > h2{
     margin: 0 auto;
     width: 1420px;
     font-size: 80px;
     color: #3A302E;
     text-align: center;
-    background: url(../../img/benefits/Line\ 1.jpg) 0 bottom no-repeat;
+    background: url(../../img/common/main-line.png) 0 bottom no-repeat;
     padding-bottom: 30px;
+    font-family: 'Hakgyoansim_PosterB';
 }
 
 
-.ben_M3{
+.bnf_M3{
     margin: 114px 0;
     padding: 95px 0;
     background-color: #F3F3F3;
@@ -53,17 +55,17 @@
     flex-direction: column;
     gap: 65px;
 }
-.ben_M3 > p{
-    
+.bnf_M3 > p{    
     font-size: 36px;
     text-align: center;
     color: #3A302E;
+    font-family: 'Paperlogy';
 }
-.ben_M3 > p > span{
+.bnf_M3 > p > span{
     color: #FF9D00;
     font-weight: bold;
 }
-.ben_M3 > div{
+.bnf_M3 > div{
     width: 1035px;
     display: flex;
     flex-wrap: wrap;
@@ -72,7 +74,7 @@
     gap: 100px;
 
 }
-.ben_M3 > div > div{
+.bnf_M3 > div > div{
     width: 278.09px; height: 278.09px;
     background-color: #3A302E;
     border-radius: 37.08px;
@@ -82,75 +84,76 @@
     color: white;
     font-weight: bold;
 }
-.ben_M3 > div > div>p{
+.bnf_M3 > div > div>p{
     text-align: center;
     
 }
-.ben_M3 > div > div > p > svg{
+.bnf_M3 > div > div > p > svg{
     fill: white;
 }
-.ben_M3 > div > div > div{
+.bnf_M3 > div > div > div{
     font-size: 24.21px;
     text-align: center;
+    font-family: 'GmarketSans';
 }
 
 
-.ben_M3 > div > div:nth-of-type(1):hover{
+.bnf_M3 > div > div:nth-of-type(1):hover{
     background-color: #FFAE00;    
     color: #3A302E;
     transition: 0.3s;
 }
-.ben_M3 > div > div:nth-of-type(1):hover > p > svg{
+.bnf_M3 > div > div:nth-of-type(1):hover > p > svg{
     fill: #3A302E;
     transition: 0.3s;
 }
 
-.ben_M3 > div > div:nth-of-type(2):hover{
+.bnf_M3 > div > div:nth-of-type(2):hover{
     background-color: #FFAE00;    
     color: #3A302E;
     transition: 0.3s;
 }
-.ben_M3 > div > div:nth-of-type(2):hover > p > svg{
+.bnf_M3 > div > div:nth-of-type(2):hover > p > svg{
     fill: #3A302E;
     transition: 0.3s;
 }
 
-.ben_M3 > div > div:nth-of-type(3):hover{
+.bnf_M3 > div > div:nth-of-type(3):hover{
     background-color: #FFAE00;    
     color: #3A302E;
     transition: 0.3s;
 }
-.ben_M3 > div > div:nth-of-type(3):hover > p > svg{
+.bnf_M3 > div > div:nth-of-type(3):hover > p > svg{
     fill: #3A302E;
     transition: 0.3s;
 }
 
-.ben_M3 > div > div:nth-of-type(4):hover{
+.bnf_M3 > div > div:nth-of-type(4):hover{
     background-color: #FFAE00;    
     color: #3A302E;
     transition: 0.3s;
 }
-.ben_M3 > div > div:nth-of-type(4):hover > p > svg{
+.bnf_M3 > div > div:nth-of-type(4):hover > p > svg{
     fill: #3A302E;
     transition: 0.3s;
 }
 
-.ben_M3 > div > div:nth-of-type(5):hover{
+.bnf_M3 > div > div:nth-of-type(5):hover{
     background-color: #FFAE00;    
     color: #3A302E;
     transition: 0.3s;
 }
-.ben_M3 > div > div:nth-of-type(5):hover > p > svg{
+.bnf_M3 > div > div:nth-of-type(5):hover > p > svg{
     fill: #3A302E;
     transition: 0.3s;
 }
 
-.ben_M3 > div > div:nth-of-type(6):hover{
+.bnf_M3 > div > div:nth-of-type(6):hover{
     background-color: #FFAE00;    
     color: #3A302E;
     transition: 0.3s;
 }
-.ben_M3 > div > div:nth-of-type(6):hover > p > svg{
+.bnf_M3 > div > div:nth-of-type(6):hover > p > svg{
     fill: #3A302E;
     transition: 0.3s;
 }
