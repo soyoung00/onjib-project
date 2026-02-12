@@ -1,1 +1,49 @@
-/*# sourceMappingURL=location.css.map */
+.main {
+  max-width: 1420px;
+  max-height: 660px;
+  margin: 0 auto;
+  position: relative;
+}
+.main img {
+  border-radius: 20px;
+  width: 100%;
+  height: 660px;
+  display: block;
+}
+.main .main-text {
+  position: absolute;
+  left: 90px;
+  bottom: 115px;
+  color: #fff;
+  font-size: 98px;
+}
+
+.contents {
+  width: 1420px;
+  height: 620px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  padding-top: 282px;
+  gap: 60px;
+}
+.contents .map {
+  width: 50%;
+}
+.contents .map img {
+  width: 100%;
+  height: auto;
+}
+.contents .adress {
+  max-width: 610px;
+  max-height: 494px;
+}
+.contents .adress .brand-name {
+  width: 168px;
+  height: 60px;
+  margin-bottom: 62px;
+}
+.contents .adress .adress-text {
+  line-height: 62px;
+  font-size: 24px;
+}/*# sourceMappingURL=location.css.map */
