@@ -1,0 +1,58 @@
+{
+    "info": [
+        {
+            "id": 1,
+            "title": "흰돌(7개월) / 수컷",
+            "content": "사람을 좋아하고 품에 안겨 쉬는 걸 <br> 즐기는 교감이 깊은 사랑스러운 흰돌이",
+            "img": "./assets/img/main/adoption-list-img1.png"
+        },
+        {
+            "id": 2,
+            "title": "깜돌(7개월) / 수컷",
+            "content": "품에 안기길 좋아하고 <br> 활발한 에너지와 깊은 애정을 가진 사랑둥이 깜돌",
+            "img": "./assets/img/main/adoption-list-img2.png"
+        },
+        {
+            "id": 3,
+            "title": "통이(9개월) / 수컷",
+            "content": "모두에게 스스럼없이 다가가며 <br> 어디서든 잘 적응하는 사랑스러운 통이",
+            "img": "./assets/img/main/adoption-list-img3.jpg"
+        },
+        {
+            "id": 4,
+            "title": "콩단추(1살) / 수컷",
+            "content": "보호자와의 교감을 좋아하고 <br>기본 교육이 잘 되어 있는 매력적인 단추",
+            "img": "./assets/img/main/adoption-list-img4.png"
+        },
+        {
+            "id": 5,
+            "title": "소리(2살) / 암컷",
+            "content": "안기면 배를 보이며 잠들 만큼 순한 성격으로 <br> 사람 곁에 머무는 걸 가장 좋아하는 소리",
+            "img": "./assets/img/main/adoption-list-img5.jpg"
+        },
+        {
+            "id": 6,
+            "title": "또치(2살) / 수컷",
+            "content": " 다정한 손길에 스르르 마음을 열고 <br> 사랑을 받을수록 더 빛나는 또치",
+            "img": "./assets/img/main/adoption-list-img6.jpg"
+        },
+        {
+            "id": 7,
+            "title": "두리(1살) / 암컷",
+            "content": "천천히 마음을 여는 조심스러운 성격으로<br>익숙해지면 헤드번팅으로 애정표현하는 두리",
+            "img": "./assets/img/main/adoption-list-img7.png"
+        },
+        {
+            "id": 8,
+            "title": "소금(1살) / 암컷",
+            "content": "마음을 조금씩 열어 손길에 응답하며 <br> 기다림 속에서 깊은 유대를 만들어가는 소금이",
+            "img": "./assets/img/main/adoption-list-img8.png"
+        },
+        {
+            "id": 9,
+            "title": "탕후루(2살) / 수컷",
+            "content": "사람을 정말 좋아하며 먼저 다가와 인사하고 <br> 하루 대부분을 곁에서 조용히 보내는 탕후루",
+            "img": "./assets/img/main/adoption-list-img9.png"
+        }
+    ]
+}

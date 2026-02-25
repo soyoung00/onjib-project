@@ -2,7 +2,7 @@
 @import url('./font.css');
 
 // ------------------------------------------------------
-// -----------------------header---------------------------
+// header
 // ------------------------------------------------------
 header {
     width: 100%;
@@ -11,10 +11,34 @@ header {
     left: 0;
     z-index: 1000;
     transition: transform .3s ease;
-    
+
     &.hide {
         transform: translateY(-100%);
     }
+}
+
+header::after {
+    content: '';
+    width: 100%;
+    height: 0%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    background-color: white;
+    transition: 0.5s;
+}
+
+header.active::after {
+    height: 100%;
+}
+
+header nav ul li:hover>a {
+    font-weight: 500;
+}
+
+header nav ul li .dropdown a:hover {
+    font-weight: 500;
 }
 
 .header-inner {
@@ -22,18 +46,23 @@ header {
     margin: 0 auto;
     font-family: 'GmarketSans';
     font-weight: 300;
-    
+
 }
 
 .header-inner>div {
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: space-between;
     padding: 50px 0;
 }
 
 .header-inner>p {
     margin: 0 auto;
+    display: block;
+}
+
+.header-inner>p.hidden {
+    display: none;
 }
 
 .header-inner>div>nav>ul {
@@ -41,21 +70,33 @@ header {
     gap: 0 30px;
     list-style: none;
     text-align: center;
-    
+
 }
 
 .dropdown {
-    display: none;
-    // display: flex;
+    // display: none;
+    display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 30px;
     gap: 14px;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+nav:hover .dropdown {
+    max-height: 200px;
+}
+
+.side-menu {
+    display: none;
 }
 
 
+
 // ------------------------------------------------------
-// -----------------------footer---------------------------
+// footer
 // ------------------------------------------------------
 
 
@@ -96,14 +137,17 @@ footer b {
     display: flex;
     justify-content: flex-end;
     padding-bottom: 14px;
+    gap: 0 6px;
 
 }
 
 
 
 
+
+
 // ------------------------------------------------------
-// -----------------------floating-btn---------------------------
+// floating-btn
 // ------------------------------------------------------
 
 
@@ -116,5 +160,140 @@ footer b {
     span {
         display: block;
         padding: 16px 0;
+        cursor: pointer;
+    }
+}
+
+
+
+
+// ------------------------------------------------------
+// 모바일
+// ------------------------------------------------------
+
+@media screen and (max-width: 960px) {
+    .side-menu {
+        display: block;
+        z-index: 2001;
+    }
+
+    .header-inner{
+        >div>a{
+            img{
+                width: 85%;
+            }
+        }
+    }
+
+    header nav {
+        display: block; // 숨김은 transform으로 처리할 거라 display는 block 유지
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        background: #fff;
+        transform: translateX(100%);
+        transition: transform .3s ease;
+        z-index: 2000;
+        padding: 110px 10%; // 헤더 높이에 맞춰 조절
+        box-shadow: -10px 0 30px rgba(0, 0, 0, .08);
+    }
+
+    /* 열렸을 때 */
+    header.m-open nav {
+        transform: translateX(0);
+    }
+
+    /* 메뉴 세로 정렬 */
+    .header-inner>div>nav>ul {
+        flex-direction: column;
+        gap: 18px 0;
+        align-items: flex-start;
+        text-align: left;
+        font-size: 25px;
+    }
+
+    .header-inner>div {
+        align-items: center; // 모바일에서 로고/햄버거 정렬 자연스럽게
+    }
+
+    /* 모바일에서는 hover로 dropdown 펼치지 않기 */
+    nav:hover .dropdown {
+        max-height: 0;
+    }
+
+    /* dropdown 기본 닫힘 */
+    header nav ul li .dropdown {
+        padding-top: 12px;
+        gap: 10px;
+        align-items: flex-start;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height .25s ease;
+    }
+
+    /* li에 open 클래스가 붙으면 dropdown 펼치기 */
+    header nav ul li.open .dropdown {
+        max-height: 240px;
+    }
+
+    header nav ul>li.active>a {
+        font-weight: 500;
+    }
+
+    /* 모바일에서 서브메뉴 링크 들여쓰기 */
+    header nav ul li .dropdown a {
+        padding-left: 10px;
+    }
+
+    /* 모바일 열렸을 때 배경 클릭용 오버레이(선택) */
+    header::before {
+        content: '';
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, .35);
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity .3s ease;
+        z-index: 1500;
+    }
+
+    header.m-open::before {
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+
+
+    // ------------------------------------------------------
+    // floating-btn
+    // ------------------------------------------------------
+
+
+    .floating-btn {
+        right: 3% !important;
+    }
+
+    
+}
+
+@media screen and (max-width: 480px) {
+    
+    .footer-inner{
+        align-items: flex-start;
+        flex-direction: column;
+
+        .sns{
+            justify-content: flex-start;
+            padding: 14px 0;
+        }
+    }
+
+    .floating-btn {
+        img{
+            width: 80%;
+            right: 1% !important;
+        }
     }
 }

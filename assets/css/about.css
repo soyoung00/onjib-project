@@ -1,0 +1,121 @@
+@import url("common/font.css");
+@import url("common/common.css");
+.about {
+  padding: 230px 0;
+}
+.about b {
+  color: #FF9D00;
+  font-weight: 500;
+}
+.about .about-banner {
+  position: relative;
+  width: 75%;
+  aspect-ratio: 1420/660;
+  margin: 0 auto;
+  border-radius: 20px;
+  overflow: hidden;
+  background: url(../img/about/banner-about.png) center/cover no-repeat;
+  margin-bottom: 110px;
+}
+.about .about-banner > div {
+  color: #fff;
+  -webkit-text-stroke: 2px #3A302E;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(3px, 2vw, 20px);
+  position: absolute;
+  top: 57%;
+  left: 10%;
+}
+.about .about-banner > div h2 {
+  font-family: "Hakgyoansim_PosterB";
+  font-size: clamp(30px, 6vw, 97px);
+}
+.about .about-banner > div p {
+  font-family: "Paperlogy";
+  font-size: clamp(16px, 2.8vw, 54px);
+}
+.about .about-center {
+  text-align: center;
+  height: 100vh;
+  background: url(../img/about/about-center-backgound.png) 0 0/cover no-repeat;
+}
+.about .about-center > div:nth-of-type(1) {
+  display: flex;
+  flex-direction: column;
+  gap: 110px 0;
+  padding: 6% 0;
+}
+.about .about-center > div:nth-of-type(1) h2 {
+  font-family: "MemomentKkukkukk";
+  font-size: clamp(40px, 6vw, 100px);
+  font-weight: 500;
+  color: #3A302E;
+}
+.about .about-center > div:nth-of-type(1) p {
+  font-family: "Paperlogy";
+  font-weight: 200;
+  font-size: clamp(10px, 6vw, 28px);
+}
+.about .about-center > div:nth-of-type(2) {
+  display: flex;
+  gap: 5%;
+  margin: 0 auto;
+  justify-content: center;
+}
+.about .about-center > div:nth-of-type(2) img {
+  width: clamp(90px, 18vw, 370px);
+  max-width: 100%;
+  height: auto;
+  flex: 0 1 auto;
+}
+.about .center-info {
+  padding: 200px 0;
+}
+.about .center-info > div:nth-of-type(1) {
+  width: 75%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.about .center-info > div:nth-of-type(1) h2 {
+  font-size: 50px;
+  font-family: "Hakgyoansim_PosterB";
+  color: #3A302E;
+}
+.about .center-info > div:nth-of-type(1) h2 b {
+  color: #FF9D00;
+}
+.about .center-info > div:nth-of-type(1) .center-line {
+  width: 100%;
+  height: 12px;
+  margin: 0 auto;
+  background: url(../img/common/main-line.png) center/contain no-repeat;
+}
+.about .center-info > div:nth-of-type(2) {
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+  padding: 176px 0;
+}
+.about .center-info > div:nth-of-type(2) article {
+  display: flex;
+  justify-content: center;
+  gap: 0 60px;
+  align-items: center;
+}
+.about .center-info > div:nth-of-type(2) article img {
+  width: 100%;
+}
+.about .center-info > div:nth-of-type(2) article div {
+  background-color: #F3F3F3;
+  max-width: 476px;
+  padding: 6% 3%;
+  border-radius: 37.41px;
+  font-family: "GmarketSans";
+  font-size: clamp(18px, 3vw, 30px);
+  font-weight: 500;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  line-height: 1.8;
+}/*# sourceMappingURL=about.css.map */

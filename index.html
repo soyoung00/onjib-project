@@ -5,14 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./assets/css/common/common.css">
     <link rel="stylesheet" href="./assets/css/index.css">
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
-    
+
+    <!-- Swiper JS -->
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <!-- Chart.js CDN -->
+    <script defer src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
     <script defer src="./assets/js/common.js"></script>
-     <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script defer src="./assets/js/index.js"></script>
 </head>
 
 <body>
@@ -22,30 +24,31 @@
     <header>
         <div class="header-inner">
             <div>
-                <a href="#"><img src="./assets/img/common/logo-black.png" alt=""></a>
+                <a href="/index.html"><img src="./assets/img/common/logo-black.png" alt=""></a>
                 <nav>
                     <ul>
-                        <li><a href="#">센터소개</a></li>
+                        <li><a href="./page/about.html">센터소개</a></li>
                         <li><a href="#">만남과 보호</a>
                             <!-- 드롭다운 -->
                             <div class="dropdown">
-                                <a href="#">입양문의</a>
-                                <a href="#">파양&입소 문의</a>
-                                <a href="#">입양후기</a>
+                                <a href="./page/adoption/adoption.html">입양문의</a>
+                                <a href="./page/adoption/intake.html">파양&입소 문의</a>
+                                <a href="./page/adoption/reviews.html">입양후기</a>
                             </div>
                         </li>
-                        <li><a href="#">입양 혜택</a></li>
+                        <li><a href="./page/benefits/benefits_main.html">입양 혜택</a></li>
                         <li>
                             <a href="#">참여하기</a>
                             <!-- 드롭다운 -->
                             <div class="dropdown">
-                                <a href="#">후원하기</a>
-                                <a href="#">봉사참여</a>
+                                <a href="./page/join/donation-step1.html">후원하기</a>
+                                <a href="./page/join/volunteer.html">봉사참여</a>
                             </div>
                         </li>
-                        <li><a href="#">오시는 길</a></li>
+                        <li><a href="./page/loacation.html">오시는 길</a></li>
                     </ul>
                 </nav>
+                <div class="side-menu"><img src="./assets/img/common/mobile-menu.png" alt=""></div>
             </div>
             <p><img src="./assets/img/common/main-line.svg" alt=""></p>
         </div>
@@ -58,43 +61,97 @@
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide"><img src="./assets/img/main/main-slide-img1.png" alt=""></div>
-                        <div class="swiper-slide">Slide 2</div>
-                        <div class="swiper-slide">Slide 3</div>
-                        <div class="swiper-slide">Slide 4</div>
+                        <div class="swiper-slide"><img src="./assets/img/main/main-slide-img2.png" alt=""></div>
+                        <div class="swiper-slide"><img src="./assets/img/main/main-slide-img3.png" alt=""></div>
+                        <div class="swiper-slide"><img src="./assets/img/main/main-slide-img4.png" alt=""></div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <section class="graph-spot">
+        <section class="chart-spot" id="chartSection">
             <div>
-                <svg width="667" height="667" viewBox="0 0 667 667" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M590.128 256.903C610.37 325.038 602.717 398.423 568.852 460.915C534.987 523.407 477.684 569.887 409.55 590.129L363.77 436.039C391.038 427.938 413.97 409.337 427.523 384.327C441.076 359.318 444.139 329.95 436.038 302.682L590.128 256.903Z" fill="#70AD47"/>
-                    <path d="M585.602 243.052C568.796 196.011 539.176 154.603 500.086 123.501C460.996 92.3992 413.992 72.8417 364.377 67.0353C314.762 61.229 264.512 69.4049 219.297 90.6405C174.082 111.876 135.702 145.326 108.488 187.216C81.2737 229.105 66.309 277.767 65.2822 327.71C64.2555 377.653 77.2076 426.889 102.677 469.862C128.146 512.835 165.119 547.834 209.423 570.91C253.727 593.986 303.599 604.22 353.41 600.458L341.29 439.988C321.389 441.491 301.464 437.402 283.763 428.183C266.062 418.963 251.291 404.98 241.115 387.811C230.939 370.643 225.765 350.972 226.175 331.018C226.585 311.064 232.564 291.623 243.437 274.887C254.309 258.15 269.643 244.786 287.708 236.302C305.772 227.818 325.849 224.551 345.671 226.871C365.494 229.191 384.273 237.005 399.891 249.431C415.509 261.857 427.342 278.4 434.057 297.195L585.602 243.052Z" fill="#ED7D31"/>
-                    <path d="M365.046 599.326C375.935 598.024 386.733 596.055 397.38 593.43L358.903 437.368C354.642 438.419 350.32 439.207 345.962 439.728L365.046 599.326Z" fill="#FFC000"/>
-                </svg>
+                <canvas id="myChart" class="myChart"></canvas>
+            </div>
+            <div class="chart-text">
+                <p><img src="./assets/img/main/dog-cat.png" alt=""></p>
+                <div>
+                    <span>연</span>
+                    <span>8만마리</span>
+                </div>
+                <div>
+                    <span>하루 약</span>
+                    <span>220마리</span>
+                </div>
+                <div>
+                    <span>매</span>
+                    <span>6분마다 1마리</span>
+                </div>
+            </div>
+        </section>
 
+        <section class="news-spot">
+            <div>
+                <div>
+                    <h2>온집 소식 <img src="./assets/img/common/icon-home.png" alt=""></h2>
+                    <p>인스타그램에서 온집의 활동 소식을 확인해 보세요</p>
+                    <p><img src="./assets/img/common/icon_insta.png" alt="">dog_love</p>
+                </div>
+                <div class="slides">
+                    <div class="swiper mySwiperNews">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide news"><a href="#"><img src="./assets/img/main/news-img1.png"
+                                        alt=""></a></div>
+                            <div class="swiper-slide"><a href="#"><img src="./assets/img/main/news-img2.png" alt=""></a>
+                            </div>
+                            <div class="swiper-slide"><a href="#"><img src="./assets/img/main/news-img3.png" alt=""></a>
+                            </div>
+                            <div class="swiper-slide"><a href="#"><img src="./assets/img/main/news-img4.png" alt=""></a>
+                            </div>
+                            <div class="swiper-slide"><a href="#"><img src="./assets/img/main/news-img5.jpg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
             </div>
-            <div class="graph-text">
-                <div>
-                    <span >연</span>
-                    <span >8만마리</span>
-                </div>
-                <div>
-                    <span >하루 약</span>
-                    <span >220마리</span>
-                </div>
-                <div>
-                    <span >매</span>
-                    <span >6분마다 1마리</span>
-                </div>
-                
+        </section>
+
+        <section class="adoption-list">
+            <div class="ani">
+                <h2>
+                    <img src="./assets/img/main/heart.png" alt="">
+                    <b>입양</b>을 기다려요
+                    <img src="./assets/img/main/heart.png"alt="">
+                </h2>
+                <p>머무는 곳은 보호소지만 마음은 집을 향해 있어요</p>
             </div>
+            <p class="ani main-line"><img src="./assets/img/common/main-line.svg" alt=""></p>
+            <div class="adoption-items">
+                <!-- <figure>
+                    <p><img src="./assets/img/main/adoption-list-img7.png" alt="프로필 아이콘" title="프로필 아이콘"></p>
+                    <b>두리(1살) / 암컷</b>
+                    <figcaption>
+                        <p>서울시 동대문구 어느 시장에서 구조되어 센터 입소[보호 센터] : 서울시립동물복지지원센터 마포센터[성격]• 사람(타동물) 친화력 : 사람을 무척 좋아하며 다른 개들과도 잘 지냅니다. 다만 소유욕이 있고 질투가 있어 먹을 때나 특정 장난감에 대한 집착이 있을 때 주의해야 합니다.• 새로운 환경 적응 : 사람이 있다면 크게 힘들지 않게 적응을 잘 할 거예요. 특히 새로운 공간에서는 호기심이 발동해서 뽈뽈뽈 잘 돌아다니기도 해요.• 에너지 레벨 : 중하/ 자기가 익숙한 공간에서는 많이 움직이지도 않고 차분한 편이지만 산책도 어느정도 잘하고 보통 어느 친구들처럼 무난한 아이입니다.• 좋아(싫어)하는 것 : 사람과 함께하는 공놀이도 좋아하고 스스로도 뾱뾱이 소리나는 솜공을 가지고 노는 것을 좋아하기도 해요. 싫어하는 것은 아무래도 사람과 헤어지는 것.• 필요 교육 : 패드배변 훈련부터 기본 산책훈련(자동줄을 사용한 듯 지그재그로 마음대로 움직예요)등 하나씩 알려주세요.• 기타 특징중성화 수술 완료.  센터에 체류하고 있는 동안 종합 백신및 내외부 구충 등 하고 있습니다.[이상적인 가정]-사람을 너무 좋아하는 친구이니 집에 상주할 수 있는 식구가 많은 다인 가정 등-초등이상의 자녀가 있는 가정 등 어느 나이대도 상관 없는 가정 등-덩치가 매우 큰 반려견이 있는게 아닌 이상 차롬과 비슷한 체구가 있는 사회성 좋은 반려견이 있는 가정도 적합-방음이 잘 되거나 내부 소음에 대해 예민하지 않는 주변환경(아파트나 빌라)을 가진 가정[담당자들의 애정 한마디]항상 밝게 웃으며 귀엽게 웃어주는 우리</p>
+                    </figcaption>
+                </figure> -->
+            </div>
+            <p class="ani main-line"><img src="./assets/img/common/main-line.svg" alt=""></p>
+            <a href="#" class="ani"><img  class="more-btn" src="./assets/img/main/more-btn.png" alt=""></a>
         </section>
     </main>
 
 
 
+    <!------------------------ 팝업 ---------------------------->
+    <div class="popup">
+        <div><img src="./assets/img/main/main-popup.png" alt=""></div>
+        <div class="popup-btn">
+            <p>오늘 하루 보지 않기</p>
+            <p>닫기</p>
+        </div>
+    </div>
 
     <!------------------------ 플로팅 도구 ---------------------------->
     <div class="floating-btn">
