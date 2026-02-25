@@ -4,8 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../../assets/css/join/volunteer.css">
 </head>
 <body>
     <!-- 봉사 참여 -->
+
+     <div class="bnf_M1">
+        <p><img src="../../assets/img/join/volunteer.jpg" alt=""></p>
+        <div class="text-box">
+            <span class="title">봉사참여 </span> <br>
+            <span class="sub">아이들과 눈을 맞추고 마음을 나누는 시간</span>
+        </div>
+    </div>
+
+
+ <div class="section-header">
+        <span class="section-title">
+            기본정보
+            <img src="../../assets/img/join/paw-icon.svg" alt="">
+        </span>
+        <p>
+            <img src="../../assets/img/common/Line 1.jpg" alt="">
+        </p>
+    </div>
+
+    <section class="section">
+                <span class="donation-text">이름</span>
+                <div class="form-box">
+                    <input class="form-box-text" type="text" name="name" required>
+                </div>
+            </section>
+
+            <section class="section">
+                <span class="donation-text">연락처</span>
+                <div class="form-box">
+                    <input class="form-box-text" type="tel" inputmode="numeric" maxlength="13" id="p1" required>
+                </div>
+            </section>
+
+             <script>
+
+                const phoneInput = document.getElementById('p1');
+
+                phoneInput.addEventListener('input', function (e) {
+
+                    // 숫자만 남기기
+                    let value = e.target.value.replace(/\D/g, '');
+
+                    // 01012345678 → 010-1234-5678
+                    if (value.length <= 3) {
+                        value = value;
+                    } else if (value.length <= 7) {
+                        value = value.slice(0, 3) + '-' + value.slice(3);
+                    } else {
+                        value = value.slice(0, 3) + '-' + value.slice(3, 7) + '-' + value.slice(7, 11);
+                    }
+
+                    e.target.value = value;
+                });
+            </script>
 </body>
 </html>
