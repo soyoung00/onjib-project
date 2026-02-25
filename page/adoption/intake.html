@@ -4,8 +4,159 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../../assets/css/adoption/intake.css">
+    <script defer src="../../assets/js/common.js"></script>
+    <script defer src="../../assets/js/adoption/intake.js"></script>
 </head>
+
 <body>
     <!-- 파양 & 입소 문의 -->
+
+    <header>
+        <div class="header-inner">
+            <div>
+                <a href="#"><img src="../../assets/img/common/logo-black.png" alt=""></a>
+                <nav>
+                    <ul>
+                        <li><a href="#">센터소개</a></li>
+                        <li><a href="#">만남과 보호</a>
+                            <!-- 드롭다운 -->
+                            <div class="dropdown">
+                                <a href="#">입양문의</a>
+                                <a href="#">파양&입소 문의</a>
+                                <a href="#">입양후기</a>
+                            </div>
+                        </li>
+                        <li><a href="#">입양 혜택</a></li>
+                        <li>
+                            <a href="#">참여하기</a>
+                            <!-- 드롭다운 -->
+                            <div class="dropdown">
+                                <a href="#">후원하기</a>
+                                <a href="#">봉사참여</a>
+                            </div>
+                        </li>
+                        <li><a href="#">오시는 길</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <p><img src="../../assets/img/common/main-line.svg" alt=""></p>
+        </div>
+    </header>
+
+    <main class="intake_M">
+        <div class="rvs_S1">
+            <p><img src="../../assets/img/adoption/adoption_intake_main.jpg" alt=""></p>
+            <div>
+                <div>파양&입소문의</div>
+                <p>안전하게 맡겨주세요!</p>
+            </div>
+        </div>
+
+        <div class="intake_1">
+            <div>입소 과정 문의</div>
+        </div>
+
+        <div class="intake_2">
+            <div>
+                <div><img src="../../assets/img/adoption/adoption_intake_1.jpg" alt=""></div>
+                <h3>1. 신청서 접수</h3>
+                <p>
+                    하단 신청서를 작성하여 문의하세요. <br>
+                    전담 관리사가 배정되면 연락을 드립니다.
+                </p>
+            </div>
+            <div>
+                <div><img src="../../assets/img/adoption/adoption_intake_2.jpg" alt=""></div>
+                <h3>2. 간단한 상담진행</h3>
+                <p>
+                    전담 관리사가 아이 상태 확인, 입소 계획 논의 등 <br>
+                    자세한 상담을 통해 도와드립니다.
+                </p>
+            </div>
+            <div>
+                <div><img src="../../assets/img/adoption/adoption_intake_3.jpg" alt=""></div>
+                <h3>3. 입소일정 조율</h3>
+                <p>
+                    입소 확정 시 입소 방법 (센터 방문 또는 픽업) <br>
+                    입소 날짜를 조율합니다.
+                </p>
+            </div>
+            <div>
+                <div><img src="../../assets/img/adoption/adoption_intake_4.jpg" alt=""></div>
+                <h3>4. 입소 후 관리</h3>
+                <p>
+                    새로운 가족을 만날 때까지 건강 / 행동케어 <br>
+                    입양 준비를 진행합니다.
+                </p>
+            </div>
+        </div>
+
+        <div class="intake_3">
+            <button>신청서 작성</button>
+        </div>
+
+         <div class="floating-btn">
+            <span><img src="../../assets/img/common/top-btn.png" alt=""></span>
+        <span><a href="#"><img src="../../assets/img/common/adoption-btn.png" alt=""></a></span>
+    </div>
+
+    </main>
+
+    <div id="intakeModal" class="intake_popup">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>입소 신청서 작성</h2>
+            <form id="intakeForm" class="intakeForm">
+                <div class="intake_input">
+                    <label>성함</label>
+                    <input type="text" placeholder="성함을 입력하세요." required>
+                </div>
+                <div class="intake_input">
+                    <label>연락처</label>
+                    <input type="tel" placeholder="-기호를 포함하여 입력하세요." required>
+                </div>
+                <div class="intake_input">
+                    <label>파양동물 정보</label>
+                    <input type="text" placeholder="종,나이,특이사항 등 입력하세요." required>
+                </div>
+                <div class="intake_input">
+                    <label>파양사유</label>
+                    <textarea rows="4" placeholder="내용을 입력하세요." required></textarea>
+                </div>
+                <div class="intake_input">
+                    <label>긴급여부</label>
+                    <input type="checkbox">
+                </div>
+                <div class="intake_input">
+                    <label>사진업로드</label>
+                    <input type="file" name="files[]" multiple>
+                </div>
+                <button type="submit" class="submit-btn">제출하기</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-inner">
+            <div>
+                <span><img src="../../assets/img/common/logo-white.png" alt=""></span>
+                <ul>
+                    <li><b>Tel.</b> 02-330-3821</li>
+                    <li><b>팩스</b> 02-2292-6339</li>
+                    <li><b>이메일</b> info@animals.or.kr</li>
+                </ul>
+            </div>
+            <div>
+                <div class="sns">
+                    <img src="../../assets/img/common/icon_insta.png" alt="">
+                    <img src="../../assets/img/common/icon_facebook.png" alt="">
+                </div>
+                <p>Copyright © Welcome animal Foundation. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
 </body>
 </html>

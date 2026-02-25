@@ -1,0 +1,238 @@
+@import url(../common/common.css);
+.rvs_main {
+  padding: 230px 0 150px;
+  max-width: 1420px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.bnf_M1 {
+  margin: 0px auto 150px;
+  width: 100%;
+  max-width: 1420px;
+  position: relative;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.bnf_M1 > p > img {
+  width: 100%;
+}
+
+.bnf_M1 > div {
+  font-size: 97.74px;
+  font-weight: bold;
+  -webkit-text-stroke: 4px black;
+  color: white;
+  paint-order: stroke fill;
+  margin: 0;
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+  text-shadow: 0 7px 6px rgba(0, 0, 0, 0.3);
+  font-family: "Hakgyoansim_PosterB";
+}
+
+.rvs_M1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url(../../img/common/main-line.png) 0 bottom no-repeat;
+  padding-bottom: 30px;
+  gap: 35px;
+}
+
+.rvs_M1 > p {
+  font-size: 36px;
+  font-family: "Paperlogy";
+  font-weight: 700;
+  color: #3A302E;
+}
+
+.rvs_M1 > p > span {
+  color: #FF9D00;
+}
+
+.rvs_M1 > div {
+  font-size: 72px;
+  font-family: "MemomentKkukkukk";
+  color: #3A302E;
+}
+
+.submit-B {
+  padding-top: 30px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.submit-B > a > button {
+  padding: 10px 20px;
+  font-family: "Paperlogy";
+  font-weight: 600;
+  font-size: 24px;
+  color: #3A302E;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.submit-B > a:hover > button {
+  background-color: #FF9D00;
+  color: white;
+  transition: 0.3s;
+}
+
+.rvs_M2 {
+  background: url(../../img/common/main-line.png) 0 bottom no-repeat;
+  padding: 100px 0 170px;
+}
+
+.rvs_M2 > ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 52px;
+}
+
+.rvs_M2 > ul > li {
+  border-radius: 16px;
+  width: 350px;
+  height: 300px;
+  overflow: hidden;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.rvs_M2 > ul > li > a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.rvs_M2 > ul > li > a > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.rvs_M3 {
+  padding: 120px 0 50px;
+}
+
+.rvs_M3 > ul {
+  display: flex;
+  justify-content: center;
+  gap: 47px;
+}
+
+.rvs_M3 > ul > li > a {
+  font-size: 32px;
+  font-family: "MemomentKkukkukk";
+  color: #ADADAD;
+}
+
+.rvs_M3 > ul > li > a:hover {
+  color: #FF9D00;
+  transition: 0.3s;
+}
+
+@media (max-width: 1024px) {
+  .rvs_main {
+    padding: 230px 50px 130px;
+  }
+  .bnf_M1 {
+    margin-bottom: 80px;
+  }
+  .bnf_M1 > div {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    font-size: 60px;
+    -webkit-text-stroke: 2px black;
+  }
+  .rvs_M1 {
+    gap: 10px;
+  }
+  .rvs_M1 > p {
+    font-size: 28px;
+  }
+  .rvs_M1 > div {
+    font-size: 50px;
+  }
+  .submit-B > a > button {
+    width: 100%;
+    font-size: 28px;
+    font-weight: 400;
+  }
+  .rvs_M2 {
+    padding: 80px 0 100px;
+  }
+  .rvs_M2 > ul {
+    gap: 30px;
+  }
+  .rvs_M2 > ul > li {
+    width: calc(50% - 30px);
+    height: 250px;
+  }
+}
+@media (max-width: 768px) {
+  .rvs_main {
+    padding: 100px 15px 50px;
+  }
+  .bnf_M1 {
+    margin-bottom: 50px;
+  }
+  .bnf_M1 > div {
+    font-size: 30px;
+    -webkit-text-stroke: 2px black;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+  }
+  .rvs_M1 {
+    padding-bottom: 20px;
+    gap: 5px;
+  }
+  .rvs_M1 > p {
+    font-size: 18px;
+  }
+  .rvs_M1 > div {
+    font-size: 30px;
+  }
+  .submit-B {
+    padding-top: 15px;
+  }
+  .submit-B > a > button {
+    width: 100%;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .rvs_M2 {
+    padding: 60px 0 100px;
+  }
+  .rvs_M2 > ul {
+    gap: 20px;
+  }
+  .rvs_M2 > ul > li {
+    width: 100%;
+    height: 220px;
+  }
+  .rvs_M3 {
+    padding: 50px 0;
+  }
+  .rvs_M3 > ul {
+    gap: 20px;
+  }
+  .rvs_M3 > ul > li > a {
+    font-size: 20px;
+  }
+  .floating-btn {
+    display: none;
+  }
+  :root {
+    --swiper-navigation-size: 20px;
+  }
+}/*# sourceMappingURL=reviews.css.map */

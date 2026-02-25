@@ -1,0 +1,228 @@
+@import url(../common/common.css);
+.rvs_submit {
+  padding: 230px 0 150px;
+  max-width: 1420px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.rvs_S1 {
+  margin: 0px auto 150px;
+  width: 100%;
+  max-width: 1420px;
+  position: relative;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.rvs_S1 > p > img {
+  width: 100%;
+}
+
+.rvs_S1 > div {
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+}
+
+.rvs_S1 > div > div {
+  font-size: 97.74px;
+  font-weight: bold;
+  font-family: "Hakgyoansim_PosterB";
+  -webkit-text-stroke: 4px black;
+  color: white;
+  paint-order: stroke fill;
+  margin: 0;
+  text-shadow: 0 7px 6px rgba(0, 0, 0, 0.3);
+}
+
+.rvs_S1 > div > p {
+  font-size: 54px;
+  font-family: "Paperlogy";
+  font-weight: 400;
+  -webkit-text-stroke: 4px black;
+  color: white;
+  paint-order: stroke fill;
+  margin: 0;
+  text-shadow: 0 7px 6px rgba(0, 0, 0, 0.3);
+}
+
+.rvs_SBM2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url(../../img/common/main-line.png) center bottom no-repeat;
+  padding-bottom: 30px;
+  margin-bottom: 50px;
+}
+
+.rvs_SBM2 > div {
+  font-size: clamp(32px, 6vw, 100px);
+  font-family: "MemomentKkukkukk";
+  color: #3A302E;
+}
+
+.rvs_SBM3 {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  box-sizing: border-box;
+}
+
+.rvs_SBM3 > div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.rvs_SBM3 label,
+.rvs_SBM3 > div > p:first-child {
+  font-family: "Paperlogy";
+  font-weight: 700;
+  font-size: clamp(18px, 2.5vw, 32px);
+  color: #333;
+}
+
+.rvs_SBM3 input[type=text],
+.rvs_SBM3 textarea {
+  width: 100%;
+  height: auto;
+  min-height: 60px;
+  padding: 15px 20px;
+  border: 1px solid #D9D9D9;
+  border-radius: 15px;
+  font-family: "Paperlogy";
+  font-size: 18px;
+  box-sizing: border-box;
+}
+
+.rvs_SBM3 textarea {
+  min-height: 150px;
+  max-height: 400px;
+  resize: vertical;
+}
+
+.rvs_SBM3 div > p:last-child,
+.rvs_SBM3 span {
+  font-weight: 400;
+  font-size: 14px;
+  color: gray;
+  margin-top: -5px;
+}
+
+.rvs_SBM3 > div:nth-of-type(4) > input {
+  width: 100%;
+  height: auto;
+  min-height: 60px;
+  font-family: "Paperlogy";
+  font-size: 18px;
+  box-sizing: border-box;
+}
+
+.submit-btn {
+  width: 200px;
+  max-width: 100%;
+  height: 65px;
+  padding: 0;
+  font-family: "Paperlogy";
+  font-size: 24px;
+  font-weight: 600;
+  background-color: #f8f8f8;
+  color: #3A302E;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #FF9D00;
+  color: white;
+  transform: translateY(-3px);
+}
+
+@media (max-width: 1024px) {
+  .rvs_submit {
+    padding: 230px 50px 130px;
+  }
+  .rvs_S1 {
+    margin-bottom: 80px;
+  }
+  .rvs_S1 > div {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+  }
+  .rvs_S1 > div > div {
+    font-size: 60px;
+    -webkit-text-stroke: 2px black;
+  }
+  .rvs_S1 > div > p {
+    font-size: 30px;
+    -webkit-text-stroke: 1px black;
+  }
+  .rvs_SBM2 > div {
+    font-size: 50px;
+  }
+  .rvs_SBM3 {
+    width: 100%;
+  }
+  .rvs_SBM3 > a {
+    margin-bottom: 30px;
+  }
+  .underline img {
+    width: 100%;
+    height: 4px;
+    -o-object-fit: fill;
+       object-fit: fill;
+  }
+}
+@media (max-width: 768px) {
+  .rvs_submit {
+    padding: 100px 15px 50px;
+  }
+  .rvs_S1 {
+    margin-bottom: 50px;
+  }
+  .rvs_S1 > div {
+    bottom: 20px;
+    left: 20px;
+  }
+  .rvs_S1 > div > div {
+    font-size: 30px;
+    -webkit-text-stroke: 2px black;
+  }
+  .rvs_S1 > div > p {
+    font-size: 18px;
+    -webkit-text-stroke: 1px black;
+  }
+  .rvs_SBM2 {
+    margin-bottom: 0;
+    padding-bottom: 20px;
+  }
+  .rvs_SBM2 > div {
+    font-size: 30px;
+  }
+  .rvs_SBM3 {
+    gap: 30px;
+    padding: 50px 30px 20px;
+  }
+  .submit-btn {
+    width: 100%;
+    padding: 15px 20px;
+  }
+  .floating-btn {
+    display: none;
+  }
+  :root {
+    --swiper-navigation-size: 20px;
+  }
+}/*# sourceMappingURL=reviews_submit.css.map */

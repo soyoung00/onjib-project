@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../../assets/css/adoption/reviews_submit.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script defer src="../../assets/js/adoption/reviews.js"></script>
+    <script defer src="../../assets/js/common.js"></script>
+</head>
+<body>
+    <!-- 입양후기>등록페이지-->
+    <header>
+        <div class="header-inner">
+            <div>
+                <a href="#"><img src="../../assets/img/common/logo-black.png" alt=""></a>
+                <nav>
+                    <ul>
+                        <li><a href="#">센터소개</a></li>
+                        <li><a href="#">만남과 보호</a>
+                            <!-- 드롭다운 -->
+                            <div class="dropdown">
+                                <a href="#">입양문의</a>
+                                <a href="#">파양&입소 문의</a>
+                                <a href="#">입양후기</a>
+                            </div>
+                        </li>
+                        <li><a href="#">입양 혜택</a></li>
+                        <li>
+                            <a href="#">참여하기</a>
+                            <!-- 드롭다운 -->
+                            <div class="dropdown">
+                                <a href="#">후원하기</a>
+                                <a href="#">봉사참여</a>
+                            </div>
+                        </li>
+                        <li><a href="#">오시는 길</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <p><img src="../../assets/img/common/main-line.svg" alt=""></p>
+        </div>
+    </header>
+
+
+    <main class="rvs_submit">
+        <div class="rvs_S1">
+            <p><img src="../../assets/img/adoption/adoption_reviews_main.jpg" alt=""></p>
+            <div>
+                <div>입양후기</div>
+                <p>나의 새로운 가족을 소개합니다.</p>
+            </div>
+        </div>
+
+        <div class="rvs_SBM2">
+            <div>입양후기 남기기</div>
+        </div>
+
+
+        <form class="rvs_SBM3">
+            <div>
+                <label for="user_name">성함</label>
+                <input type="text" id="user_name" name="userName">
+            </div>
+            <div>
+                <label for="title">제목</label>
+                <input type="text" id="title" name="title" placeholder="제목을 입력하세요.">
+                <p>제목엔 입양동물 이름이 포함되어야 합니다.</p>
+            </div>
+            <div>
+                <label for="content">내용</label>
+                <textarea id="content" name="content" placeholder="내용을 입력하세요." rows="5" style="width: 100%;"></textarea>
+            </div>
+            <div >
+                <p>사진 첨부 <span>(여러 장 가능)</span></p>
+                <input type="file" name="files[]" class="photo" multiple>
+            </div>
+            <a href="reviews.html"><button type="button" class="submit-btn">등록하기</button></a>
+        </form>
+
+        <div class="underline"><img src="../../assets/img/common/main-line.png" alt="" width="100%"></div>
+
+    </main>
+
+    <div class="floating-btn">
+        <span><img src="../../assets/img/common/top-btn.png" alt=""></span>
+        <span><a href="#"><img src="../../assets/img/common/adoption-btn.png" alt=""></a></span>
+    </div>
+
+    <footer>
+        <div class="footer-inner">
+            <div>
+                <span><img src="../../assets/img/common/logo-white.png" alt=""></span>
+                <ul>
+                    <li><b>Tel.</b> 02-330-3821</li>
+                    <li><b>팩스</b> 02-2292-6339</li>
+                    <li><b>이메일</b> info@animals.or.kr</li>
+                </ul>
+            </div>
+            <div>
+                <div class="sns">
+                    <img src="../../assets/img/common/icon_insta.png" alt="">
+                    <img src="../../assets/img/common/icon_facebook.png" alt="">
+                </div>
+                <p>Copyright © Welcome animal Foundation. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+</html>
