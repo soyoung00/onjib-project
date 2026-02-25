@@ -1,24 +1,6 @@
-.main {
-  max-width: 1420px;
-  max-height: 660px;
-  margin: 0 auto;
-  position: relative;
-}
-.main img {
-  border-radius: 20px;
-  width: 100%;
-  height: 660px;
-  display: block;
-}
-.main .main-text {
-  position: absolute;
-  left: 90px;
-  bottom: 115px;
-  color: #fff;
-  font-size: 98px;
-}
-
-.contents {
+@import url("./common/common.css");
+@import url("./common/font.css");
+.location-under {
   width: 1420px;
   height: 620px;
   display: flex;
@@ -26,24 +8,34 @@
   justify-content: center;
   padding-top: 282px;
   gap: 60px;
+  align-items: center;
 }
-.contents .map {
+
+.contents img {
+  max-width: 750px;
+  height: 614px;
+}
+
+.adress {
   width: 50%;
-}
-.contents .map img {
-  width: 100%;
-  height: auto;
-}
-.contents .adress {
   max-width: 610px;
   max-height: 494px;
 }
-.contents .adress .brand-name {
+.adress .brand-logo {
   width: 168px;
   height: 60px;
   margin-bottom: 62px;
 }
-.contents .adress .adress-text {
-  line-height: 62px;
+.adress .adress-text {
+  font-family: Paperlogy;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 100px;
   font-size: 24px;
+}
+.adress p {
+  display: flex;
+  align-items: center;
+  gap: 38px;
+  border-bottom: 1px solid rgb(65, 56, 55);
 }/*# sourceMappingURL=location.css.map */

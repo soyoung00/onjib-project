@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../assets/css/join/donation.css">
+</head>
+
+<body>
+    <!-- 후원하기 2 단계 -->
+
+    <div class="bnf_M1">
+        <p><img src="../../assets/img/join/donation.jpg" alt=""></p>
+        <div class="text-box">
+            <span class="title">후원하기</span>
+            <span class="sub">후원자님의 마음, <br>아이들에겐 안전과 희망이 됩니다.</span>
+        </div>
+    </div>
+
+    <ul class="step">
+        <li class="step-item">1</li>
+        <li class="step-line"></li>
+        <li class="step-item active">2</li>
+        <li class="step-line"></li>
+        <li class="step-item">3</li>
+    </ul>
+
+    <div class="section-header">
+        <span class="section-title">
+            기본정보
+        </span>
+        <p>
+            <img src="../../assets/img/common/Line 1.jpg" alt="">
+        </p>
+    </div>
+
+
+    <!-- 기본정보 이하 -->
+
+
+    <div class="donation">
+         <form action="donation-step3.html" method="get">
+
+            <section class="section">
+                <span class="donation-text"> 후원 금액 </span>
+                <div class="box">
+                    <label>
+                        <input type="radio" name="amount" value="10000" required>
+                        <span class="box-text">10,000원</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="amount" value="30000">
+                        <span class="box-text">30,000원</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="amount" value="50000">
+                        <span class="box-text">50,000원</span>
+                    </label>
+                    <label class="custom-input">
+                        <input type="radio" name="amount" value="custom" id="customRadio">
+                        <span class="box-text">직접입력</span>
+                        <input type="text" id="customAmount" inputmode="numeric" min=1000 pattern="[0-9]*"
+                            placeholder="금액을 입력하세요">
+                    </label>
+                </div>
+            </section>
+
+            <script>
+                const customInput = document.getElementById('customAmount');
+                const customRadio = document.getElementById('customRadio');
+
+                customInput.addEventListener('focus', function () {
+                    customRadio.checked = true;
+                });
+
+                customInput.addEventListener('input', function () {
+                    customRadio.checked = true;
+                });
+
+                customRadio.addEventListener('change', function () {
+                    if (this.checked) {
+                        customInput.focus();
+                    }
+                });
+            </script>
+
+            <section class="section">
+                <span class="donation-text">유형</span>
+                <div class="box">
+                    <label class="type-options">
+                        <input type="radio" name="type" value="개인" required>
+                        <span class="box-text">개인</span>
+                    </label>
+                    <label class="type-options">
+                        <input type="radio" name="type" value="단체">
+                        <span class="box-text">단체</span>
+                    </label>
+                </div>
+            </section>
+
+            <section class="section">
+                <span class="donation-text">이름</span>
+                <div class="form-box">
+                    <input class="form-box-text" type="text" name="name" required>
+                </div>
+            </section>
+
+            <section class="section">
+                <span class="donation-text">연락처</span>
+                <div class="form-box">
+                    <input class="form-box-text" type="tel" inputmode="numeric" maxlength="13" id="p1" required>
+                </div>
+            </section>
+
+            <script>
+
+                const phoneInput = document.getElementById('p1');
+
+                phoneInput.addEventListener('input', function (e) {
+
+                    // 숫자만 남기기
+                    let value = e.target.value.replace(/\D/g, '');
+
+                    // 01012345678 → 010-1234-5678
+                    if (value.length <= 3) {
+                        value = value;
+                    } else if (value.length <= 7) {
+                        value = value.slice(0, 3) + '-' + value.slice(3);
+                    } else {
+                        value = value.slice(0, 3) + '-' + value.slice(3, 7) + '-' + value.slice(7, 11);
+                    }
+
+                    e.target.value = value;
+                });
+            </script>
+
+            <section class="section">
+                <span class="donation-text">결제정보</span>
+                <div class="payment-group">
+                    <label class="payment-option">
+                        <input type="radio" name="payment" value="credit" required>
+                        <span>신용카드</span>
+                    </label>
+                    <label class="payment-option">
+                        <input type="radio" name="payment" value="cash">
+                        <span>계좌이체</span>
+                    </label>
+                </div>
+            </section>
+
+            <section class="section">
+                <label class="privacy-agreement">
+                    <span class="agreement-text">[필수]개인정보처리방침 동의</span>
+                    <input type="checkbox" name="privacy" required>
+                </label>
+            </section>
+    </div>
+
+    <div class="end-line">
+        <img src="../../assets/img/common/Line 1.jpg" alt="">
+    </div>
+
+    <button type="submit" class="next-btn">
+        다음으로
+    </button>
+
+
+    </form>
+    </div>
+
+
+
+
+</body>
+
+</html>
