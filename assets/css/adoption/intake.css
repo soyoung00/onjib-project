@@ -53,7 +53,7 @@
   flex-direction: column;
   align-items: center;
   background: url(../../img/common/main-line.png) 0 bottom no-repeat;
-  padding-bottom: 30px;
+  padding-bottom: 70px;
   gap: 35px;
 }
 
@@ -61,6 +61,13 @@
   font-size: 100px;
   font-family: "MemomentKkukkukk";
   color: #3A302E;
+  position: absolute;
+}
+
+.intake_1 > p {
+  position: relative;
+  right: -270px;
+  top: -40px;
 }
 
 .intake_2 {
