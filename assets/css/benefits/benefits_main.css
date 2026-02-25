@@ -1,11 +1,26 @@
+@charset "UTF-8";
 @import url(../common/common.css);
+/* [수정] 부모의 max-width를 해제하여 자식인 M3 배경이 나갈 길을 열어줍니다. */
+.bnf_main {
+  padding: 230px 0 150px;
+  width: 100%; /* 1420px 제약 삭제 */
+  margin: 0; /* auto 삭제 */
+  box-sizing: border-box;
+}
+
+/* [유지/수정] 기존 스타일 유지하되, 중앙 정렬을 위해 margin: 0 auto 추가 */
 .bnf_M1 {
-  margin: 0px auto 150px;
-  width: 1420px;
+  margin: 0 auto 150px; /* 중앙 정렬 추가 */
+  width: 100%;
+  max-width: 1420px;
   position: relative;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);
   border-radius: 20px;
   overflow: hidden;
+}
+
+.bnf_M1 > p > img {
+  width: 100%;
 }
 
 .bnf_M1 > div {
@@ -22,18 +37,28 @@
   font-family: "Hakgyoansim_PosterB";
 }
 
-.bnf_M2 > h2 {
-  margin: 0 auto;
-  width: 1420px;
-  font-size: 80px;
-  color: #3A302E;
-  text-align: center;
-  background: url(../../img/common/main-line.png) 0 bottom no-repeat;
+/* [유지/수정] 중앙 정렬을 위해 margin: 0 auto 추가 */
+.bnf_M2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url(../../img/common/main-line.png) center bottom no-repeat; /* center로 변경 */
   padding-bottom: 30px;
-  font-family: "Hakgyoansim_PosterB";
+  gap: 35px;
+  max-width: 1420px; /* 폭 제한 */
+  margin: 0 auto; /* 중앙 정렬 */
 }
 
+.bnf_M2 > h2 {
+  font-size: 80px;
+  color: #3A302E;
+  font-family: "Hakgyoansim_PosterB";
+  font-weight: 700;
+}
+
+/* [핵심 수정] 배경은 100% 꽉 차게, 내부 요소만 중앙 정렬 */
 .bnf_M3 {
+  width: 100%; /* 화면 꽉 채우기 */
   margin: 114px 0;
   padding: 95px 0;
   background-color: #F3F3F3;
@@ -47,6 +72,8 @@
   text-align: center;
   color: #3A302E;
   font-family: "Paperlogy";
+  max-width: 1420px; /* 폭 제한 추가 */
+  margin: 0 auto; /* 중앙 정렬 추가 */
 }
 
 .bnf_M3 > p > span {
@@ -55,15 +82,16 @@
 }
 
 .bnf_M3 > div {
-  width: 1035px;
+  max-width: 1035px; /* 원본 유지 */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 0 auto;
+  margin: 0 auto; /* 중앙 정렬 유지 */
   gap: 100px;
 }
 
-.bnf_M3 > div > div {
+/* [유지] 혜택 박스 공통 스타일 */
+.btn_M3 {
   width: 278.09px;
   height: 278.09px;
   background-color: #3A302E;
@@ -75,82 +103,154 @@
   font-weight: bold;
 }
 
-.bnf_M3 > div > div > p {
+.btn_M3 > p {
   text-align: center;
 }
 
-.bnf_M3 > div > div > p > svg {
+.btn_M3 > p > svg {
   fill: white;
 }
 
-.bnf_M3 > div > div > div {
+.btn_M3 > div {
   font-size: 24.21px;
   text-align: center;
   font-family: "GmarketSans";
 }
 
-.bnf_M3 > div > div:nth-of-type(1):hover {
+.btn_M3:hover {
   background-color: #FFAE00;
   color: #3A302E;
   transition: 0.3s;
 }
 
-.bnf_M3 > div > div:nth-of-type(1):hover > p > svg {
+.btn_M3:hover > p > svg {
   fill: #3A302E;
   transition: 0.3s;
 }
 
-.bnf_M3 > div > div:nth-of-type(2):hover {
-  background-color: #FFAE00;
-  color: #3A302E;
-  transition: 0.3s;
+@media (max-width: 1024px) {
+  .bnf_main {
+    padding: 230px 0 50px;
+  }
+  .bnf_M1, .bnf_M2 {
+    width: calc(100% - 100px);
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .bnf_M1 {
+    margin-bottom: 80px;
+  }
+  .bnf_M1 > div {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    font-size: 60px;
+    -webkit-text-stroke: 2px black;
+  }
+  .bnf_M2 > h2 {
+    font-size: 60px;
+  }
+  .bnf_M3 {
+    width: 100%;
+    padding: 100px 0 150px;
+    margin: 100px 0;
+  }
+  .bnf_M3 > p {
+    font-size: 28px;
+    width: calc(100% - 40px);
+    margin: 0 auto;
+  }
+  .bnf_M3 > div {
+    gap: 40px;
+    max-width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+  .btn_M3 {
+    height: auto;
+    aspect-ratio: 1/1;
+    padding: 20px;
+    box-sizing: border-box;
+  }
 }
-
-.bnf_M3 > div > div:nth-of-type(2):hover > p > svg {
-  fill: #3A302E;
-  transition: 0.3s;
+@media (max-width: 768px) {
+  .bnf_main {
+    padding: 100px 0 50px;
+  }
+  .bnf_M1, .bnf_M2 {
+    width: calc(100% - 30px);
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .bnf_M1 {
+    margin-bottom: 50px;
+  }
+  .bnf_M1 > div {
+    font-size: 30px;
+    -webkit-text-stroke: 1.5px black;
+    bottom: 20px;
+    left: 20px;
+  }
+  .bnf_M2 {
+    padding-bottom: 20px;
+  }
+  .bnf_M2 > h2 {
+    font-size: 30px;
+    background-size: 80% auto;
+  }
+  .bnf_M3 {
+    width: 100%;
+    padding: 60px 0;
+    margin: 50px 0;
+  }
+  .bnf_M3 > p {
+    font-size: 16px;
+    line-height: 1.4;
+    word-break: keep-all;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+  .bnf_M3 > div {
+    gap: 20px;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+  .btn_M3 {
+    width: 150px;
+    height: 150px;
+    max-width: 250px;
+    aspect-ratio: auto;
+    border-radius: 25px;
+    margin: 0 auto;
+    align-items: center;
+    gap: 10px;
+  }
+  .btn_M3 > p {
+    width: 40px;
+    height: 40px;
+  }
+  .btn_M3 > p svg {
+    width: 100%;
+    height: 100%;
+  }
+  .btn_M3 > div {
+    font-size: 12px;
+  }
+  .floating-btn {
+    display: none;
+  }
+  :root {
+    --swiper-navigation-size: 20px;
+  }
 }
-
-.bnf_M3 > div > div:nth-of-type(3):hover {
-  background-color: #FFAE00;
-  color: #3A302E;
-  transition: 0.3s;
-}
-
-.bnf_M3 > div > div:nth-of-type(3):hover > p > svg {
-  fill: #3A302E;
-  transition: 0.3s;
-}
-
-.bnf_M3 > div > div:nth-of-type(4):hover {
-  background-color: #FFAE00;
-  color: #3A302E;
-  transition: 0.3s;
-}
-
-.bnf_M3 > div > div:nth-of-type(4):hover > p > svg {
-  fill: #3A302E;
-  transition: 0.3s;
-}
-
-.bnf_M3 > div > div:nth-of-type(5):hover {
-  background-color: #FFAE00;
-  color: #3A302E;
-  transition: 0.3s;
-}
-
-.bnf_M3 > div > div:nth-of-type(5):hover > p > svg {
-  fill: #3A302E;
-  transition: 0.3s;
-}
-
-.bnf_M3 > div > div:nth-of-type(6):hover {
-  background-color: #FFAE00;
-  color: #3A302E;
-  transition: 0.3s;
-}
-
-.bnf_M3 > div > div:nth-of-type(6):hover > p > svg {
-  fill: #3A302E;
-  transition: 0.3s;
+@media (hover: none) {
+  .bnf_M3 > div > div:active {
+    background-color: #FFAE00 !important;
+    color: #3A302E !important;
+    transform: scale(0.98);
+    transition: 0.1s;
+  }
+  .bnf_M3 > div > div:active > p > svg {
+    fill: #3A302E !important;
+  }
 }/*# sourceMappingURL=benefits_main.css.map */
