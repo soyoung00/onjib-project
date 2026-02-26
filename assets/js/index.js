@@ -189,7 +189,7 @@ const observer = new IntersectionObserver(function (entries) {
                     onProgress: function (anim) {
                         // 30% 진행되면 텍스트 시작
                         const progress = anim.numSteps ? (anim.currentStep / anim.numSteps) : 0;
-                        if (progress > 0.3) runTextAnimation();
+                        if (progress > 0.2) runTextAnimation();
 
                         if (typeof baseAnim.onProgress === 'function') {
                             baseAnim.onProgress.call(this, anim);
@@ -324,7 +324,12 @@ function renderAdoption(data) {
                     centeredSlides: true,
                 },
                 768: {
-                    slidesPerView: 1.25,
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                    centeredSlides: true,
+                 },
+                 959: {
+                    slidesPerView: 3,
                     spaceBetween: 20,
                     centeredSlides: true,
                  }
@@ -365,22 +370,35 @@ function debounce(fn, delay) {
     };
 }
 
-async function loadData() {
-    const res_img = await fetch('http://openapi.seoul.go.kr:8088/636a71574e6e616837336759554c6e/json/vPetImg/1/260');
-    let data_list_img = await res_img.json();
+// 응답이 에러일 경우
+async function fetchJson(url) {
+  const res = await fetch(url);
+  if (!res.ok) {
+    const text = await res.text();
+    throw new Error(`HTTP ${res.status}: ${text}`);
+  }
+  return res.json();
+}
 
-    const res = await fetch('http://openapi.seoul.go.kr:8088/636a71574e6e616837336759554c6e/json/vPetInfo/1/28');
-    let data_list = await res.json();
+async function loadData() {
+    const data_list_img = await fetchJson('https://onjib-seoul-proxy.parksoyoung9750.workers.dev/vPetImg/1/260');
+    // let data_list_img = await res_img.json();
+
+    const data_list = await fetchJson('https://onjib-seoul-proxy.parksoyoung9750.workers.dev/vPetInfo/1/28');
+    // let data_list = await res.json();
 
     function extractIntakeBackground(pureText) {
+        console.log(pureText);
         const t = (pureText || '')
             .replace(/\u00a0/g, ' ')
             .replace(/\r/g, '')
             .trim();
 
         const m = t.match(/\[입소\s*배경\]\s*:?\s*([\s\S]*?)(?=\n\s*\[[^\]]+\]|\s*$)/);
-        return m ? m[1].trim() : '';
+        // return m ? m[1].trim() : '';
+        return m ? m[1].split('[')[0].trim() : '';
     }
+
 
     let data = [];
     data_list.vPetInfo.row.forEach((obj, i) => {
@@ -417,6 +435,7 @@ async function loadData() {
             obj.ANIMAL_AGE = f.trim();
 
             data.push(obj);
+            
         }
     });
 

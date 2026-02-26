@@ -55,11 +55,35 @@
             gap: 110px 0;
             padding: 6% 0;
 
+
+
             h2 {
                 font-family: 'MemomentKkukkukk';
                 font-size: clamp(40px, 6vw, 100px);
                 font-weight: 500;
                 color: #3A302E;
+                position: relative;
+            }
+
+            h2::before {
+                position: absolute;
+                content: '';
+                background: url(../img/about/icon-foot-01.png) no-repeat center / contain;
+                left: 28%;
+                top: -1em;
+                width: 1.5em;
+                height: 1.6em;
+
+            }
+            h2::after {
+                position: absolute;
+                content: '';
+                background: url(../img/about/icon-foot-02.png) no-repeat center / contain;
+                right: 30%;
+                top: 0.8em;
+                width: 0.7em;
+                height: 0.7em;
+
             }
 
             p {
@@ -91,7 +115,7 @@
 
     .center-info {
 
-        padding: 200px 0;
+        padding: 150px 0;
 
         >div:nth-of-type(1) {
             width: 75%;
@@ -99,20 +123,33 @@
             overflow: hidden;
 
             h2 {
-                font-size: 50px;
+                font-size: clamp(30px, 3vw, 50px);
                 font-family: 'Hakgyoansim_PosterB';
                 color: #3A302E;
+                position: relative;
+                padding-top: 50px;
 
                 b {
                     color: #FF9D00;
                 }
             }
 
+            h2::before{
+                position: absolute;
+                content: '';
+                background: url(../img/about/icon-foot-03.png) no-repeat center / contain;
+                width: 1em;
+                height: 1em;
+                right: 26%;
+                top: -0.1em;
+            }
+
             .center-line {
                 width: 100%;
                 height: 12px; // 줄 이미지 높이
                 margin: 0 auto;
-                background: url(../img/common/main-line.png) center / contain no-repeat;
+                background: url(../img/common/main-line.png)  no-repeat center / contain;
+                padding-top: 30px;
 
             }
         }
@@ -152,7 +189,70 @@
     }
 
 
-    .center-space{
-        
+    .center-space {
+        width: 75%;
+        text-align: center;
+        margin: 0 auto;
+
+        .center-line {
+            width: 100%;
+            height: 12px; // 줄 이미지 높이
+            margin: 0 auto;
+            background: url(../img/common/main-line.png) no-repeat center  / contain;
+            padding-top: 30px;
+
+        }
+
+        >div:nth-of-type(1) {
+
+            h2 {
+                font-family: 'MemomentKkukkukk';
+                font-weight: 500;
+                font-size: clamp(34px, 3vw, 52px);
+                letter-spacing: 3%;
+                position: relative;
+            }
+            h2::before{
+                position: absolute;
+                content: '';
+                background: url(../img/about/icon-heart.png) no-repeat center / contain;
+                width: 1em;
+                height: 1em;
+                right: 13%;
+                top: -0.8em;
+            }
+
+        }
+
+        >div:nth-of-type(2) {
+            padding-top: 70px;
+            display: flex;
+            text-align: center;
+            gap: 3%;
+
+            figure {
+                >p {
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+
+
+            figcaption {
+
+                p {
+                    padding: 20px 0;
+                }
+
+                span {
+                    font-family: 'Paperlogy';
+                    font-weight: 200;
+                    font-size: 18px;
+                    line-height: 1.6;
+                }
+            }
+        }
+
     }
 }
