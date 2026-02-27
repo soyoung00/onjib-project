@@ -1,41 +1,45 @@
-@import url("./common/common.css");
-@import url("./common/font.css");
+@import url(../css/common/common.css);
+@import url(../css/common/font.css);
 .location-under {
-  width: 1420px;
-  height: 620px;
-  display: flex;
+  max-width: 1420px;
+  width: 100%;
   margin: 0 auto;
+  display: flex;
   justify-content: center;
-  padding-top: 282px;
-  gap: 60px;
   align-items: center;
 }
 
+.contents {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .contents img {
   max-width: 750px;
-  height: 614px;
+  height: auto;
 }
 
 .adress {
   width: 50%;
   max-width: 610px;
-  max-height: 494px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .adress .brand-logo {
   width: 168px;
   height: 60px;
-  margin-bottom: 62px;
 }
 .adress .adress-text {
   font-family: Paperlogy;
   font-weight: 400;
   font-style: normal;
-  line-height: 100px;
   font-size: 24px;
 }
 .adress p {
   display: flex;
   align-items: center;
-  gap: 38px;
+  margin-bottom: -20px;
   border-bottom: 1px solid rgb(65, 56, 55);
 }/*# sourceMappingURL=location.css.map */

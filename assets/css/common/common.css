@@ -12,14 +12,21 @@
   overflow: hidden;
 }
 
+.bnf_M1 > p {
+  margin: 0;
+  height: 100%;
+}
+
 .bnf_M1 > p > img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  display: block;
 }
 
-.bnf_M1 > div {
+.bnf_M1 > div,
+.bnf_M1 a .text-box {
   margin: 0;
   position: absolute;
   bottom: 100px;
@@ -262,4 +269,8 @@ footer b {
     width: 80%;
     right: 1% !important;
   }
+}
+.margin {
+  margin-top: 200px;
+  margin-bottom: 200px;
 }/*# sourceMappingURL=common.css.map */

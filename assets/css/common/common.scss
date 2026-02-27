@@ -1,35 +1,43 @@
 @import url('./reset.css');
 @import url('./font.css');
 
-.bnf_M1{
+
+.bnf_M1 {
     margin: 0px auto 150px;
     width: 1420px;
-    height : 660px;
+    height: 660px;
     overflow: hidden;
     position: relative;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.25);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
     overflow: hidden;
 }
-.bnf_M1 > p{
-    
+
+.bnf_M1>p {
+    margin: 0;
+    height: 100%;
 }
-.bnf_M1 > p > img{
+
+.bnf_M1>p>img {
     width: 100%;
     height: 100%;
-    object-fit:cover;
-    
+    object-fit: cover;
+    display: block;
+
 }
-.bnf_M1 > div{
+
+.bnf_M1>div,
+.bnf_M1 a .text-box {
     margin: 0;
     position: absolute;
-    bottom: 100px; left: 90px;
+    bottom: 100px;
+    left: 90px;
     font-size: 97.74px;
     font-weight: bold;
-    -webkit-text-stroke: 4px rgb(58,48,46);
+    -webkit-text-stroke: 4px rgb(58, 48, 46);
     color: white;
     paint-order: stroke fill;
-    text-shadow: 0 7px 6px rgba(0,0,0,0.3);
+    text-shadow: 0 7px 6px rgba(0, 0, 0, 0.3);
     font-family: 'Hakgyoansim_PosterB';
 }
 
@@ -209,9 +217,9 @@ footer b {
         z-index: 2001;
     }
 
-    .header-inner{
-        >div>a{
-            img{
+    .header-inner {
+        >div>a {
+            img {
                 width: 85%;
             }
         }
@@ -307,25 +315,33 @@ footer b {
         right: 3% !important;
     }
 
-    
+
 }
 
 @media screen and (max-width: 480px) {
-    
-    .footer-inner{
+
+    .footer-inner {
         align-items: flex-start;
         flex-direction: column;
 
-        .sns{
+        .sns {
             justify-content: flex-start;
             padding: 14px 0;
         }
     }
 
     .floating-btn {
-        img{
+        img {
             width: 80%;
             right: 1% !important;
         }
     }
+}
+
+
+// 윤서 - 마진 
+
+.margin{
+  margin-top: 200px;
+  margin-bottom: 200px;
 }
