@@ -84,7 +84,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const mount = document.getElementById("site-header");
   if (!mount) return;
 
-  fetch("/inc/header.html")
+  fetch("inc/header.html")
     .then(function (res) {
        
       if (!res.ok) throw new Error("header load failed");
