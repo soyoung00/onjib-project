@@ -1,56 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../../assets/css/join/volunteer.css">
-</head>
-<body>
-    <!-- 봉사 참여 -->
+     <base href="/onjib-project/" />
+    <link rel="stylesheet" href="assets/css/join/volunteer.css">
+    <link rel="stylesheet" href="assets/css/join/volunteer-popup.css">
+    <script defer src="assets/js/common.js"></script>
+    <script defer src="assets/js/join/volunteer.js" ></script>
 
-     <div class="bnf_M1">
-        <p><img src="../../assets/img/join/volunteer.jpg" alt=""></p>
-        <div class="text-box">
-            <span class="title">봉사참여 </span> <br>
-            <span class="sub">아이들과 눈을 맞추고 마음을 나누는 시간</span>
+</head>
+
+<body>
+
+    <div id="site-header"></div>
+    <div id="floating-btn"></div>
+
+
+    <div class="overlay" id="overlay">
+        <div class="popup" id="popup">
+            <div class="popup__header">
+                <button class="popup__close" id="closeBtn" aria-label="닫기">✕</button>
+            </div>
+            <div class="popup__body">
+                <p class="popup__text">신청이 접수되었습니다.<br />감사합니다.</p>
+            </div>
         </div>
     </div>
+    <!-- 봉사 참여 -->
+    <form onsubmit="return false;">
+
+        <div class="volunteer margin">
+
+            <div class="bnf_M1">
+                <p><img src="assets/img/join/volunteer.jpg" alt=""></p>
+                <div class="text-box">
+                    <span class="title">봉사참여 </span> <br>
+                    <span class="sub">아이들과 눈을 맞추고 마음을 나누는 시간</span>
+                </div>
+            </div>
 
 
- <div class="section-header">
-        <span class="section-title">
-            기본정보
-            <img src="../../assets/img/join/paw-icon.svg" alt="">
-        </span>
-        <p>
-            <img src="../../assets/img/common/Line 1.jpg" alt="">
-        </p>
-    </div>
+            <div class="section-header">
+                <span class="section-title">
+                    기본정보
+                    <img src="assets/img/join/paw-icon.svg" alt="">
+                </span>
+                <p>
+                    <img src="assets/img/common/Line 1.jpg" alt="">
+                </p>
+            </div>
 
-    <section class="section">
+
+            <section class="section">
                 <span class="donation-text">이름</span>
                 <div class="form-box">
                     <input class="form-box-text" type="text" name="name" required>
                 </div>
             </section>
-
             <section class="section">
                 <span class="donation-text">연락처</span>
                 <div class="form-box">
                     <input class="form-box-text" type="tel" inputmode="numeric" maxlength="13" id="p1" required>
                 </div>
             </section>
-
-             <script>
-
+            <script>
                 const phoneInput = document.getElementById('p1');
-
                 phoneInput.addEventListener('input', function (e) {
-
                     // 숫자만 남기기
                     let value = e.target.value.replace(/\D/g, '');
-
                     // 01012345678 → 010-1234-5678
                     if (value.length <= 3) {
                         value = value;
@@ -59,9 +79,61 @@
                     } else {
                         value = value.slice(0, 3) + '-' + value.slice(3, 7) + '-' + value.slice(7, 11);
                     }
-
                     e.target.value = value;
                 });
             </script>
+
+            <section class="section">
+                <span class="donation-text"> 봉사 희망 분야 </span>
+                <div class="box">
+                    <label>
+                        <input type="checkbox" name="volunteer-type" value="walking">
+                        <span class="box-text">동물 산책</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="volunteer-type" value="cleaning">
+                        <span class="box-text">보호소 청소</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="volunteer-type" value="transport">
+                        <span class="box-text">이동 봉사</span>
+                    </label>
+                </div>
+            </section>
+
+            <section class="section">
+                <span class="donation-text"> 봉사 가능 시간 </span>
+                <div class="box">
+                    <label>
+                        <input type="radio" name="volunteer-time" value="weekday" required>
+                        <span class="box-text">평일</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="volunteer-time" value="weekend">
+                        <span class="box-text">주말</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="volunteer-time" value="anytime">
+                        <span class="box-text">상관 없음</span>
+                    </label>
+                </div>
+            </section>
+
+            <div class="end-line">
+                <img src="assets/img/common/Line 1.jpg" alt="">
+            </div>
+
+
+            <button type="submit" class="volunteer-btn">
+                신청하기
+            </button>
+        </div>
+
+    </form>
+
+     <div id="site-footer"></div>
+
+
 </body>
+
 </html>
