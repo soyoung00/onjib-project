@@ -2,6 +2,71 @@
 @import url('common/common.css');
 
 .about {
+
+
+
+
+    //observe
+    //about center
+    .about-center>div:nth-of-type(1),
+    .about-center img {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: 0.7s ease;
+    }
+
+    .about-center>div:nth-of-type(1).active,
+    .about-center>div:nth-of-type(2) img.active {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    // center-info
+    .center-info>div:nth-of-type(1) {
+        opacity: 0;
+        transform: translateY(40px);
+        transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+
+    .center-info>div:nth-of-type(1).active {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .center-info article:nth-of-type(odd) p,
+    .center-info article:nth-of-type(odd)>div {
+        opacity: 0;
+        transform: translateX(-40px);
+        transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+
+    .center-info article:nth-of-type(even) p,
+    .center-info article:nth-of-type(even)>div {
+        opacity: 0;
+        transform: translateX(40px);
+        transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+
+    .center-info article p.active,
+    .center-info article>div.active {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    // center-space
+    .center-space div:nth-of-type(1),
+    .center-space figure {
+        opacity: 0;
+        transform: translateY(40px);
+        transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+
+    .center-space div:nth-of-type(1).active,
+    .center-space figure.active {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
     padding: 230px 0;
 
     b {
@@ -43,10 +108,13 @@
         }
     }
 
+
     .about-center {
         text-align: center;
         height: 100vh;
         background: url(../img/about/about-center-backgound.png) 0 0 / cover no-repeat;
+
+
 
 
         >div:nth-of-type(1) {
@@ -75,6 +143,7 @@
                 height: 1.6em;
 
             }
+
             h2::after {
                 position: absolute;
                 content: '';
@@ -89,7 +158,7 @@
             p {
                 font-family: 'Paperlogy';
                 font-weight: 200;
-                font-size: clamp(10px, 6vw, 28px);
+                font-size: clamp(16px, 1.5vw, 28px);
 
 
 
@@ -105,7 +174,7 @@
             justify-content: center;
 
             img {
-                width: clamp(90px, 18vw, 370px);
+                width: clamp(200px, 18vw, 370px);
                 max-width: 100%;
                 height: auto;
                 flex: 0 1 auto;
@@ -123,7 +192,7 @@
             overflow: hidden;
 
             h2 {
-                font-size: clamp(30px, 3vw, 50px);
+                font-size: clamp(26px, 3vw, 50px);
                 font-family: 'Hakgyoansim_PosterB';
                 color: #3A302E;
                 position: relative;
@@ -134,7 +203,7 @@
                 }
             }
 
-            h2::before{
+            h2::before {
                 position: absolute;
                 content: '';
                 background: url(../img/about/icon-foot-03.png) no-repeat center / contain;
@@ -148,7 +217,7 @@
                 width: 100%;
                 height: 12px; // 줄 이미지 높이
                 margin: 0 auto;
-                background: url(../img/common/main-line.png)  no-repeat center / contain;
+                background: url(../img/common/main-line.png) no-repeat center / contain;
                 padding-top: 30px;
 
             }
@@ -168,17 +237,22 @@
                 gap: 0 60px;
                 align-items: center;
 
+                >p {
+                    width: 45%;
+                }
+
                 img {
                     width: 100%;
                 }
 
                 div {
+                    width: 45%;
                     background-color: #F3F3F3;
                     max-width: 476px;
                     padding: 6% 3%;
                     border-radius: 37.41px;
                     font-family: 'GmarketSans';
-                    font-size: clamp(18px, 3vw, 30px);
+                    font-size: clamp(18px, 2vw, 30px);
                     font-weight: 500;
                     // line-height: 1.9;
                     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
@@ -198,7 +272,7 @@
             width: 100%;
             height: 12px; // 줄 이미지 높이
             margin: 0 auto;
-            background: url(../img/common/main-line.png) no-repeat center  / contain;
+            background: url(../img/common/main-line.png) no-repeat center / contain;
             padding-top: 30px;
 
         }
@@ -208,11 +282,12 @@
             h2 {
                 font-family: 'MemomentKkukkukk';
                 font-weight: 500;
-                font-size: clamp(34px, 3vw, 52px);
+                font-size: clamp(24px, 3vw, 52px);
                 letter-spacing: 3%;
                 position: relative;
             }
-            h2::before{
+
+            h2::before {
                 position: absolute;
                 content: '';
                 background: url(../img/about/icon-heart.png) no-repeat center / contain;
@@ -231,7 +306,10 @@
             gap: 3%;
 
             figure {
+                width: 100%;
+
                 >p {
+
                     img {
                         width: 100%;
                     }
@@ -239,11 +317,14 @@
             }
 
 
+
             figcaption {
 
                 p {
                     padding: 20px 0;
                 }
+
+
 
                 span {
                     font-family: 'Paperlogy';
@@ -255,4 +336,178 @@
         }
 
     }
+}
+
+
+
+
+// ------------------------------------------------------
+// 테블릿
+// ------------------------------------------------------
+
+@media screen and (min-width:768px) and (max-width:960px) {
+
+    .about {
+        padding: 230px 0 100px;
+
+        .about-banner {
+            margin-bottom: 0;
+        }
+
+        .about-center {
+
+            >div:nth-of-type(1) {
+                gap: 50px 0 !important;
+            }
+        }
+
+        .about-center {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .center-info {
+            padding: 0;
+
+            >div:nth-of-type(2) {
+                padding: 80px 0;
+            }
+        }
+
+        .center-space {
+            margin-top: 50px;
+
+            >div:nth-of-type(2) {
+
+                figure:nth-of-type(3) figcaption>p img {
+                    width: 99%;
+                    height: 48px;
+                }
+            }
+
+
+        }
+    }
+
+
+}
+
+
+
+// ------------------------------------------------------
+// 모바일
+// ------------------------------------------------------
+@media screen and (max-width: 480px) {
+
+    .about {
+        padding: 230px 0 100px;
+
+        .about-banner {
+            margin-bottom: 0;
+            width: 90%;
+        }
+
+        .about-center {
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            >div:nth-of-type(1) {
+                gap: 50px 0 !important;
+
+
+                h2::before {
+                    left: 12%;
+                }
+
+                h2::after {
+                    right: 17%;
+                }
+            }
+
+            >div:nth-of-type(2) {
+
+                flex-direction: column;
+                align-items: center;
+
+                img {
+                    width: 300px;
+                }
+            }
+
+
+
+            .mySwiper {
+                width: 100%;
+                height: 350px;
+                position: relative;
+
+                .swiper-pagination {
+                    bottom: -3px;
+                    --swiper-theme-color: #FF9D00;
+                }
+            }
+
+            .mySwiper .swiper-slide {
+                text-align: center;
+                font-size: 18px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    display: block;
+                    object-fit: cover;
+                }
+            }
+        }
+
+
+        .center-info {
+            padding: 0;
+
+            >div:nth-of-type(1) {
+
+                h2::before {
+                    right: 0%;
+                    top: 1em;
+                }
+            }
+
+            >div:nth-of-type(2) {
+                padding: 80px 0;
+
+                article{
+                    flex-direction: column;
+
+                    >p{
+                        width: 100%;
+                    }
+                    >div{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        .center-space {
+            margin-top: 50px;
+
+            >div:nth-of-type(1) {
+
+                h2::before {
+                    right: 0;
+                    top: -0.9em;
+                }
+            }
+
+            >div:nth-of-type(2) {
+                flex-wrap: wrap;
+                gap: 30px;
+            }
+        }
+    }
+
 }

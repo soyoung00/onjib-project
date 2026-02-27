@@ -5,45 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- <base href="/" /> -->
+     <base href="/onjib-project/" />
     <link rel="stylesheet" href="../assets/css/about.css">
     <script defer src="../assets/js/common.js"></script>
     <script defer src="../assets/js/about.js"></script>
+    
+    <!-- slide -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 </head>
 
 <body>
     <!-- 센터 소개 -->
-    <header>
-        <div class="header-inner">
-            <div>
-                <a href="/index.html"><img src="/assets/img/common/logo-black.png" alt=""></a>
-                <nav>
-                    <ul>
-                        <li><a href="/page/about.html">센터소개</a></li>
-                        <li><a href="#">만남과 보호</a>
-                            <!-- 드롭다운 -->
-                            <div class="dropdown">
-                                <a href="/page/adoption/adoption.html">입양문의</a>
-                                <a href="/page/adoption/intake.html">파양&입소 문의</a>
-                                <a href="/page/adoption/reviews.html">입양후기</a>
-                            </div>
-                        </li>
-                        <li><a href="./page/benefits/benefits_main.html">입양 혜택</a></li>
-                        <li>
-                            <a href="#">참여하기</a>
-                            <!-- 드롭다운 -->
-                            <div class="dropdown">
-                                <a href="/page/join/donation-step1.html">후원하기</a>
-                                <a href="/page/join/volunteer.html">봉사참여</a>
-                            </div>
-                        </li>
-                        <li><a href="/page/loacation.html">오시는 길</a></li>
-                    </ul>
-                </nav>
-                <div class="side-menu"><img src="/assets/img/common/mobile-menu.png" alt=""></div>
-            </div>
-            <p><img src="/assets/img/common/main-line.svg" alt=""></p>
-        </div>
-    </header>
+    <div id="site-header"></div>
 
     <!------------------------ 플로팅 도구 ---------------------------->
     <div class="floating-btn">
@@ -62,7 +37,7 @@
         </div>
 
         <section class="about-center">
-            <div>
+            <div class="ani">
                 <h2>따뜻한 집, 온집</h2>
                 <p>저희 센터는 도움이 필요한 <b>유기동물들을 보호</b>하고, <b>새로운 가족</b>을 만날 수 있도록 운영하고 있습니다. <br> 작은 만남이 큰 행복이 되도록 오늘도
                     <b>아이들과 함께</b>합니다.

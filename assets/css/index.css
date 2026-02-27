@@ -349,6 +349,7 @@ main .main-spot > div {
   line-height: 1.5;
 }
 .adoption-list figure figcaption > p {
+  height: 60px;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
@@ -415,7 +416,7 @@ main .main-spot > div {
     overflow: hidden;
   }
   .mySwiperAdoption .swiper-slide {
-    width: 340px !important;
+    width: 340px;
   }
   .mySwiperAdoption .swiper-pagination-bullet-active {
     --swiper-theme-color: #FF9D00;
@@ -486,7 +487,7 @@ main .main-spot > div {
     font-size: 20px;
   }
   .adoption-list figure figcaption p {
-    font-size: 18px;
+    font-size: 20px;
   }
   .mySwiperAdoption .swiper-pagination-bullet-active {
     --swiper-theme-color: #FF9D00;

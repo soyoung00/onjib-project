@@ -294,7 +294,7 @@ function renderAdoption(data) {
             wrapper.innerHTML += `
         <div class="swiper-slide">
           <figure class="ani">
-            <p><a href="#"><img src="${el.IMG_URL}"></a></p>
+            <p><a href="./page/adoption/introduce.html?seq=${el.SEQ}"><img src="${el.IMG_URL}"></a></p>
             <b>${el.ANIMAL_NM}(${el.ANIMAL_AGE}) / ${el.ANIMAL_GENDER}</b>
             <figcaption>
               <p>${el.INTAKE_BG}</p>
@@ -305,9 +305,10 @@ function renderAdoption(data) {
         });
 
         // swiper 초기화
+
         swiperAdoption = new Swiper('.mySwiperAdoption', {
-            slidesPerView: 1,
-            loop: false,
+       
+            loop: true,
             pagination: {
                 el: '.mySwiperAdoption .swiper-pagination',
                 clickable: true,
@@ -318,23 +319,14 @@ function renderAdoption(data) {
                     spaceBetween: 30,
                     centeredSlides: true,
                 },
-                480: {
-                    slidesPerView: 1,
-                    spaceBetween: 30,
-                    centeredSlides: true,
-                },
                 768: {
-                    slidesPerView: 3,
-                    spaceBetween: 20,
-                    centeredSlides: true,
-                 },
-                 959: {
-                    slidesPerView: 3,
+                    slidesPerView: 2,
                     spaceBetween: 20,
                     centeredSlides: true,
                  }
             }
         });
+        
 
     } else {
         // 데스크탑: 일반 figure
@@ -343,7 +335,7 @@ function renderAdoption(data) {
         data.slice(0, 9).forEach(function (el) {
             list_adoption.innerHTML += `
         <figure class="ani">
-          <p><a href="#"><img src="${el.IMG_URL}"></a></p>
+          <p><a href="./page/adoption/introduce.html?seq=${el.SEQ}"><img src="${el.IMG_URL}"></a></p>
           <b>${el.ANIMAL_NM}(${el.ANIMAL_AGE}) / ${el.ANIMAL_GENDER}</b>
           <figcaption>
             <p>${el.INTAKE_BG}</p>
@@ -358,6 +350,16 @@ function renderAdoption(data) {
 }
 
 // resize 때 모드 전환
+// let mql = window.matchMedia("(width <= 960px)");
+// mql.addListener(function(e){
+//     console.log(e.matches)
+//     if(e.matches){
+//         renderAdoption(cachedData);
+//     }else{
+//         renderAdoption(cachedData);
+//     }
+// });
+
 window.addEventListener('resize', debounce(function () {
     if (cachedData.length) renderAdoption(cachedData);
 }, 200));
@@ -382,13 +384,10 @@ async function fetchJson(url) {
 
 async function loadData() {
     const data_list_img = await fetchJson('https://onjib-seoul-proxy.parksoyoung9750.workers.dev/vPetImg/1/260');
-    // let data_list_img = await res_img.json();
 
     const data_list = await fetchJson('https://onjib-seoul-proxy.parksoyoung9750.workers.dev/vPetInfo/1/28');
-    // let data_list = await res.json();
 
     function extractIntakeBackground(pureText) {
-        console.log(pureText);
         const t = (pureText || '')
             .replace(/\u00a0/g, ' ')
             .replace(/\r/g, '')
