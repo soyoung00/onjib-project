@@ -1,4 +1,4 @@
-let hearderFun = function(){
+let loadHeader = function () {
   let lastScroll = 0;
   const header = document.querySelector('header');
 
@@ -68,6 +68,11 @@ let hearderFun = function(){
     });
   });
 
+}
+
+
+let loadFloating = function () {
+
   const fioatingBtn = document.querySelectorAll('.floating-btn');
 
   fioatingBtn[0].addEventListener('click', function () {
@@ -78,25 +83,77 @@ let hearderFun = function(){
   });
 }
 
-//header
-document.addEventListener("DOMContentLoaded", function () {
+//헤더
+let hearderFun = function () {
 
-  const mount = document.getElementById("site-header");
-  if (!mount) return;
+  const header = document.getElementById("site-header");
+  if (!header) return;
 
   fetch("inc/header.html")
     .then(function (res) {
-       
+
       if (!res.ok) throw new Error("header load failed");
       return res.text();
     })
     .then(function (html) {
-     
-      mount.innerHTML = html;
-      hearderFun();
+
+      header.innerHTML = html;
+      loadHeader();
     })
     .catch(function (err) {
       console.log(err);
     });
+}
+
+//플로팅 버튼
+let floatFun = function () {
+  const floating = document.getElementById("floating-btn");
+  if (!floating) return;
+
+  fetch("inc/floating-btn.html")
+    .then(function (res) {
+
+      if (!res.ok) throw new Error("header load failed");
+      return res.text();
+    })
+    .then(function (html) {
+
+      floating.innerHTML = html;
+      loadFloating();
+    })
+    .catch(function (err) {
+      console.log(err);
+    });
+}
+
+//푸터
+let footerFun = function () {
+  const footer = document.getElementById("site-footer");
+  if (!footer) return;
+
+  fetch("inc/footer.html")
+    .then(function (res) {
+
+      if (!res.ok) throw new Error("header load failed");
+      return res.text();
+    })
+    .then(function (html) {
+
+      footer.innerHTML = html;
+    })
+    .catch(function (err) {
+      console.log(err);
+    });
+}
+
+//공통 작업
+document.addEventListener("DOMContentLoaded", function () {
+
+  hearderFun();
+
+  floatFun();
+
+  footerFun();
+
 
 });
