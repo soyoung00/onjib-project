@@ -63,9 +63,9 @@ function mobile() {
 
         aboutCenterDiv.innerHTML = `
       <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="../assets/img/about/about-center-01.png" alt=""></div>
-        <div class="swiper-slide"><img src="../assets/img/about/about-center-02.png" alt=""></div>
-        <div class="swiper-slide"><img src="../assets/img/about/about-center-03.png" alt=""></div>
+        <div class="swiper-slide"><img src="assets/img/about/about-center-01.png" alt=""></div>
+        <div class="swiper-slide"><img src="assets/img/about/about-center-02.png" alt=""></div>
+        <div class="swiper-slide"><img src="assets/img/about/about-center-03.png" alt=""></div>
       </div>
       <div class="swiper-pagination"></div>
     `;
@@ -82,9 +82,9 @@ function mobile() {
         aboutCenterDiv.classList.remove('swiper', 'mySwiper');
 
         aboutCenterDiv.innerHTML = `
-      <img src="../assets/img/about/about-center-01.png" alt="">
-      <img src="../assets/img/about/about-center-02.png" alt="">
-      <img src="../assets/img/about/about-center-03.png" alt="">
+      <img src="assets/img/about/about-center-01.png" alt="">
+      <img src="assets/img/about/about-center-02.png" alt="">
+      <img src="assets/img/about/about-center-03.png" alt="">
     `;
     }
 
@@ -223,7 +223,7 @@ function moblieCenterInfo() {
         centerInfo.innerHTML =
             `
         <article>
-                    <p><img src="../assets/img/about/center-info-01.png" alt=""></p>
+                    <p><img src="assets/img/about/center-info-01.png" alt=""></p>
                     <div>
                         아이들의 입양 과정 전후로 <br>
                         지속적인 <b>케어</b>와 <b>상담</b>을 <br>
@@ -232,7 +232,7 @@ function moblieCenterInfo() {
                     </div>
                 </article>
                 <article>
-                <p><img src="../assets/img/about/center-info-02.png" alt=""></p>
+                <p><img src="assets/img/about/center-info-02.png" alt=""></p>
                     <div>
                         아이를 돌보는 과정에서 <br>
                         문제가 생기면 <b>연계 병원</b>을 <br>
@@ -242,7 +242,7 @@ function moblieCenterInfo() {
                     </div>
                 </article>
                 <article>
-                    <p><img src="../assets/img/about/center-info-03.png" alt=""></p>
+                    <p><img src="assets/img/about/center-info-03.png" alt=""></p>
                     <div>
                         저희 센터는 <b>안락사 없는 <br>
                             보호</b>를 원칙으로 합니다. <br>
@@ -251,7 +251,7 @@ function moblieCenterInfo() {
                     </div>
                 </article>
                 <article>
-                <p><img src="../assets/img/about/center-info-04.png" alt=""></p>
+                <p><img src="assets/img/about/center-info-04.png" alt=""></p>
                     <div>
                         입양 전 <b>기본 훈련</b>과 <b>사회화</b>를 통해,
                         아이들이 잘 적응하도록 도와드립니다. <br>
@@ -263,7 +263,7 @@ function moblieCenterInfo() {
     } else {
         centerInfo.innerHTML =
             `<article>
-                    <p><img src="../assets/img/about/center-info-01.png" alt=""></p>
+                    <p><img src="assets/img/about/center-info-01.png" alt=""></p>
                     <div>
                         아이들의 입양 과정 전후로 <br>
                         지속적인 <b>케어</b>와 <b>상담</b>을 <br>
@@ -279,10 +279,10 @@ function moblieCenterInfo() {
                         <b>안전하고 빠른 케어</b>로 <br>
                         언제나 안심할 수 있어요.
                     </div>
-                    <p><img src="../assets/img/about/center-info-02.png" alt=""></p>
+                    <p><img src="assets/img/about/center-info-02.png" alt=""></p>
                 </article>
                 <article>
-                    <p><img src="../assets/img/about/center-info-03.png" alt=""></p>
+                    <p><img src="assets/img/about/center-info-03.png" alt=""></p>
                     <div>
                         저희 센터는 <b>안락사 없는 <br>
                             보호</b>를 원칙으로 합니다. <br>
@@ -297,7 +297,7 @@ function moblieCenterInfo() {
                         <b>배변, 기초 명령어,</b> 사람과
                         친해지기 등 적응 완벽 준비!
                     </div>
-                    <p><img src="../assets/img/about/center-info-04.png" alt=""></p>
+                    <p><img src="assets/img/about/center-info-04.png" alt=""></p>
                 </article>`
     }
     setupCenterInfoObserver();
