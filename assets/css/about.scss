@@ -80,6 +80,7 @@
         aspect-ratio: 1420 / 660;
         margin: 0 auto;
         border-radius: 20px;
+        box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);
         overflow: hidden;
         background: url(../img/about/banner-about.png) center / cover no-repeat;
         margin-bottom: 110px;
@@ -435,6 +436,10 @@
 
                 h2::after {
                     right: 17%;
+                }
+
+                p{
+                    margin: 0 30px;
                 }
             }
 
