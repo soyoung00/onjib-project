@@ -11,7 +11,7 @@
   width: 100%;
   max-width: 1420px;
   position: relative;
-  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
   border-radius: 20px;
   overflow: hidden;
 }
@@ -53,14 +53,21 @@
   flex-direction: column;
   align-items: center;
   background: url(../../img/common/main-line.png) center bottom no-repeat;
-  padding-bottom: 30px;
+  padding-bottom: 70px;
   margin-bottom: 50px;
 }
 
 .rvs_SBM2 > div {
-  font-size: clamp(32px, 6vw, 100px);
+  font-size: 100px;
   font-family: "MemomentKkukkukk";
   color: #3A302E;
+  position: absolute;
+}
+
+.paw {
+  position: relative;
+  right: -280px;
+  top: -40px;
 }
 
 .rvs_SBM3 {
@@ -80,6 +87,12 @@
   display: flex;
   flex-direction: column;
   gap: 15px;
+}
+
+.rvs_SBM3 div p {
+  font-size: 13px;
+  color: #888;
+  margin-top: 5px;
 }
 
 .rvs_SBM3 label,
@@ -126,6 +139,14 @@
   box-sizing: border-box;
 }
 
+.rvs_SBM3 input[type=text]:focus,
+.rvs_SBM3 textarea:focus {
+  border-color: rgba(255, 157, 0, 0.3);
+  outline: none;
+  box-shadow: 0 0 5px rgba(255, 157, 0, 0.5);
+  transition: all 0.3s ease;
+}
+
 .submit-btn {
   width: 200px;
   max-width: 100%;
@@ -169,8 +190,19 @@
     font-size: 30px;
     -webkit-text-stroke: 1px black;
   }
+  .rvs_SBM2 {
+    padding-bottom: 30px;
+  }
   .rvs_SBM2 > div {
     font-size: 50px;
+  }
+  .paw {
+    right: -150px;
+    top: -30px;
+  }
+  .paw > svg {
+    width: 56px;
+    height: 54px;
   }
   .rvs_SBM3 {
     width: 100%;
@@ -187,7 +219,7 @@
 }
 @media (max-width: 768px) {
   .rvs_submit {
-    padding: 100px 15px 50px;
+    padding: 230px 15px 100px;
   }
   .rvs_S1 {
     margin-bottom: 50px;
@@ -211,12 +243,19 @@
   .rvs_SBM2 > div {
     font-size: 30px;
   }
+  .paw {
+    right: -89px;
+    top: -12px;
+  }
+  .paw > svg {
+    width: 26px;
+    height: 24px;
+  }
   .rvs_SBM3 {
     gap: 30px;
     padding: 50px 30px 20px;
   }
   .submit-btn {
-    width: 100%;
     padding: 15px 20px;
   }
   .floating-btn {

@@ -1,7 +1,7 @@
 @import url(../common/common.css);
 
 main {
-    padding: 180px 0 120px; 
+    padding: 230px 0 200px; 
     max-width: 1100px;      
     margin: 0 auto;
     box-sizing: border-box;
@@ -14,13 +14,13 @@ main {
 
 .bnf_h1 > h2 {
     font-size: 40px;        
-    font-family: Hakgyoansim_PosterB;
+    font-family: 'Hakgyoansim_PosterB';
     color: #3A302E;
     padding-bottom: 35px;   
 }
 .bnf_h1 > p {
     font-size: 19px;        
-    font-family: Hakgyoansim_PosterB;
+    font-family: 'Hakgyoansim_PosterB';
     color: #3A302E;
     line-height: 1.7;
 }
@@ -94,109 +94,63 @@ main {
     border: none; 
     background: none;
     font-size: 30px;
-    font-family: 'GmarketSans';
+    font-family: 'Paperlogy';
     font-weight: 700;
     color: #3A302E;
     gap: 10px;
-}
-.backBtn:hover,
-.backBtn:hover > svg > path {
-    color: #FF9D00;
-    stroke: #FF9D00;
+    cursor: pointer;
     transition: 0.3s;
+}
+.backBtn svg path {
+    transition: 0.3s;
+    fill: #3A302E;
+    stroke: #3A302E;
+}
+.backBtn:hover {
+    stroke: #FF9D00;
+    color: #FF9D00;
+}
+.backBtn:hover svg path {
+    stroke: #FF9D00;
+    fill: #FF9D00;
 }
 
 
 @media (max-width: 1024px) {
-
     main {
     padding: 180px 0 120px; 
     max-width: 700px;      
     margin: 0 auto;
     box-sizing: border-box;
-}
-    main, .bnf_h {
-        max-width: 100%;
-        padding: 80px 20px 0;
     }
+    main, .bnf_h { max-width: 100%; padding: 80px 20px 0; }
     .bnf_h1 > h2 { font-size: 24px; }
     .bnf_h1 > p { font-size: 15px; }
-    .bnf_h2 {
-        height: auto; /* 이미지 높이를 유동적으로 */
-        margin: 40px 0 60px;
-    }
-
-    .bnf_h3 > div {
-        align-items: center;
-        gap: 10px;
-        height: 200px;
-    }
-
-    .bnf_h3 > div > div {
-        height: 100%;
-        padding: 40px; /* 패딩 살짝 축소 */
-        order: 1; /* 텍스트 박스가 위로 */
-        gap: 5px;
-    }
-
+    .bnf_h2 { height: auto; margin: 40px 0 60px; }
+    .bnf_h3 > div { align-items: center; gap: 10px; height: 200px; }
+    .bnf_h3 > div > div { height: 100%; padding: 40px; gap: 5px; }
     .bnf_h3 > div > div > div { font-size: 20px; }
-
     .bnf_h3 > div > div > p,
-    .bnf_h3 > div > div > p > span {
-        width: 100%; /* 고정너비 해제 */
-        max-width: 100%;
-        font-size: 16px;
-    }
-    
-
-    .bnf_h3 > div > p {
-        height: 100%;
-        width: 30%;
-        order: 2;
-    }
-
-    button{ margin: 0 20px 100px;}
-
+    .bnf_h3 > div > div > p > span { width: 100%; max-width: 100%; font-size: 16px; }
+    .bnf_h3 > div > p { height: 100%; width: 30%; }
+    .backBtn { margin: 0 20px 100px;}
+    .backBtn > svg { width: 30px; }
 }
 
-/* [반응형] 768px 이하 - 모바일 */
 @media (max-width: 768px) {
-    main {
-        padding-top: 80px;
-    }
-    main, .bnf_h {  max-width: 100%; padding: 80px 20px 0px; }
-
-    .bnf_h1 > h2 {
-        font-size: 18px;
-        padding-bottom: 20px;
-    }
-
-    .bnf_h1 > p {
-        font-size: 10px;
-        line-height: 1.6;
-    }
+    main { padding-top: 80px; }
+    main, .bnf_h {  max-width: 100%; padding: 60px 20px 0px; }
+    .bnf_h1 > h2 { font-size: 18px; padding-bottom: 20px; }
+    .bnf_h1 > p { font-size: 10px; line-height: 1.6; }
     .bnf_h2 { height: 100%; margin: 20px 0 20px; }
     .bnf_h3 > div { gap: 5px; height: 100px; }
-    .bnf_h3 > div > div {
-        padding: 30px 20px;
-    }
-
-    .bnf_h3 > div > div > div {
-        font-size: 10px; /* 소제목 크기 축소 */
-    }
-
+    .bnf_h3 > div > div { padding: 30px 20px; }
+    .bnf_h3 > div > div > div { font-size: 10px; }
     .bnf_h3 > div > div > p, 
-    .bnf_h3 > div > div > p > span {
-        font-size: 7px; /* 본문 크기 축소 */
-    }
-
-    .bnf_h3 > div > p {
-        height: 100%; /* 모바일 이미지 높이 축소 */
-    }
-
+    .bnf_h3 > div > div > p > span { font-size: 7px; }
+    .bnf_h3 > div > p { height: 100%; }
+    .backBtn { display: none; }
     
-    button { display: none; }
-
     .floating-btn{ display: none;}
     :root { --swiper-navigation-size: 20px;}
 }

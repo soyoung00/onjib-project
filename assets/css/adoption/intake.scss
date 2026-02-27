@@ -58,7 +58,7 @@
     color: #3A302E;
     position: absolute;
 }
-.intake_1 > p{
+.paw{
     position: relative;
     right: -270px; top: -40px;
 }
@@ -123,7 +123,7 @@
     cursor: pointer;
     transition: 0.3s;
 }
-.intake_3:hover > button{
+.intake_3 > button:hover{
     background-color : #FF9D00;
     color: white;
     transition: 0.3s;
@@ -191,6 +191,17 @@
     width: 100%; 
     box-sizing: border-box; 
 }
+.intake_input input[type="checkbox"]:focus {
+    accent-color: #FF9D00 ;
+    outline: 2px solid #FF9D00;
+}
+.intake_input input:focus, 
+.intake_input textarea:focus {
+    border-color: rgba(255, 157, 0, 0.3);
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 157, 0, 0.5);
+    transition: all 0.3s ease;
+}
 .intake_input > textarea {
     min-height: 120px;
     max-height: 200px;
@@ -202,6 +213,7 @@
     flex-direction: row; 
     align-items: center;
 }
+
 .submit-btn {
     margin: 10px auto 0;
     font-family: 'GmarketSans';
@@ -225,13 +237,18 @@
 }
 
 
+
+
 @media (max-width: 1024px) {
     .intake_M { padding: 230px 50px 130px; }
     .rvs_S1 { margin-bottom: 80px; }
     .rvs_S1 > div{ position: absolute; bottom: 30px; left: 30px;}
     .rvs_S1 > div > div { font-size: 60px; -webkit-text-stroke: 2px black; }
     .rvs_S1 > div > p { font-size: 30px; -webkit-text-stroke: 1px black; }
+    .intake_1 { padding-bottom: 30px;}
     .intake_1 > div { font-size: 50px; }
+    .paw { right: -130px; top: -30px; }
+    .paw > svg { width: 56px; height: 54px; }
     .intake_2 { gap: 100px; display: flex; flex-direction: column; }
     .intake_2 > div > div { width: 45vw; height: auto; }
 
@@ -239,12 +256,15 @@
 }
 
 @media (max-width: 768px) {
-    .intake_M { padding: 100px 15px 50px; }
+    .intake_M { padding: 230px 15px 100px; }
     .rvs_S1 { margin-bottom: 50px; }
     .rvs_S1 > div { bottom: 20px; left: 20px; }
     .rvs_S1 > div > div { font-size: 30px; -webkit-text-stroke: 2px black; }
     .rvs_S1 > div > p { font-size: 18px; -webkit-text-stroke: 1px black; }
+    .intake_1 { padding-bottom: 20px;}
     .intake_1 > div { font-size: 30px; }
+    .paw { right: -80px; top: -12px; }
+    .paw > svg { width: 26px; height: 24px; }
     .intake_2 { padding: 80px 0; gap: 80px; }
     .intake_2 > div { width: 100%; }
     .intake_2 > div > div { width: 90%; }

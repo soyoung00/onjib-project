@@ -1,6 +1,6 @@
 @import url(../common/common.css);
 .rvs_subMain {
-  padding: 230px 0 150px;
+  padding: 230px 0 100px;
   max-width: 1420px;
   margin: 0 auto;
   box-sizing: border-box;
@@ -11,7 +11,7 @@
   width: 100%;
   max-width: 1420px;
   position: relative;
-  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
   border-radius: 20px;
   overflow: hidden;
 }
@@ -53,7 +53,7 @@
   flex-direction: column;
   align-items: center;
   background: url(../../img/common/main-line.png) 0 bottom no-repeat;
-  padding-bottom: 30px;
+  padding-bottom: 70px;
   gap: 35px;
 }
 
@@ -61,12 +61,19 @@
   font-size: 100px;
   font-family: "MemomentKkukkukk";
   color: #3A302E;
+  position: absolute;
+}
+
+.paw {
+  position: relative;
+  right: -190px;
+  top: -40px;
 }
 
 .swiper.mySwiper {
   width: 1000px;
   height: 500px;
-  margin: 50px auto;
+  margin: 100px auto 50px;
 }
 
 .swiper.mySwiper img {
@@ -181,24 +188,63 @@
   transition: 0.3s;
 }
 
+#commentDisplayArea {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.simple-comment {
+  margin-bottom: 30px;
+  font-family: "GmarketSans";
+}
+
+.simple-name {
+  display: block;
+  font-weight: bold;
+  font-size: 15px;
+  color: #888;
+  margin-bottom: 8px;
+}
+
+.simple-content {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+  color: #3A302E;
+  line-height: 1.4;
+  word-break: break-all;
+}
+
 .backBtn {
+  width: 153px;
   display: flex;
   align-items: center;
   border: none;
   background: none;
   font-size: 30px;
-  font-family: "GmarketSans";
+  font-family: "Paperlogy";
   font-weight: 700;
   color: #3A302E;
-  gap: 10px;
-  margin: 50px 200px 0;
+  gap: 5px;
+  cursor: pointer;
+  padding-top: 50px;
+  transition: 0.3s;
 }
 
-.backBtn:hover,
-.backBtn:hover > svg > path {
-  color: #FF9D00;
-  stroke: #FF9D00;
+.backBtn svg path {
   transition: 0.3s;
+  fill: #3A302E;
+  stroke: #3A302E;
+}
+
+.backBtn:hover {
+  stroke: #FF9D00;
+  color: #FF9D00;
+}
+
+.backBtn:hover svg path {
+  stroke: #FF9D00;
+  fill: #FF9D00;
 }
 
 @media (max-width: 1024px) {
@@ -225,8 +271,19 @@
     font-size: 30px;
     -webkit-text-stroke: 1px black;
   }
+  .rvs_S2 {
+    padding-bottom: 30px;
+  }
   .rvs_S2 > div {
     font-size: 50px;
+  }
+  .paw {
+    right: -105px;
+    top: -30px;
+  }
+  .paw > svg {
+    width: 56px;
+    height: 54px;
   }
   .rvs_SBM2 > div {
     font-size: 70px;
@@ -251,7 +308,7 @@
 }
 @media (max-width: 768px) {
   .rvs_subMain {
-    padding: 100px 15px 50px;
+    padding: 230px 15px 100px;
   }
   .rvs_S1 {
     margin-bottom: 50px;
@@ -274,10 +331,18 @@
   .rvs_S2 > div {
     font-size: 30px;
   }
+  .paw {
+    right: -60px;
+    top: -12px;
+  }
+  .paw > svg {
+    width: 26px;
+    height: 24px;
+  }
   .swiper.mySwiper {
-    height: 250px;
+    height: 300px;
     margin: 30px auto;
-    margin: 40px auto;
+    margin: 50px auto 40px;
   }
   .rvs_S4 {
     padding: 30px 20px;
@@ -289,7 +354,7 @@
     justify-content: center;
   }
   .rvs_S5 {
-    padding-bottom: 30px;
+    padding-bottom: 0px;
   }
   .rvs_S5 > div:nth-of-type(1) > div {
     font-size: 24px;
@@ -310,10 +375,12 @@
     width: 30%;
     margin: 15px auto;
     height: 50px;
+    font-size: 20px;
   }
   .backBtn {
     margin: 0;
     font-size: 20px;
+    display: none;
   }
   .backBtn > svg {
     width: 25px;

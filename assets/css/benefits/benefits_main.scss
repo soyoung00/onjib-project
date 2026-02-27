@@ -1,28 +1,27 @@
 @import url(../common/common.css);
 
-/* [수정] 부모의 max-width를 해제하여 자식인 M3 배경이 나갈 길을 열어줍니다. */
 .bnf_main {
     padding: 230px 0 150px;
-    width: 100%;           /* 1420px 제약 삭제 */
-    margin: 0;             /* auto 삭제 */
+    width: 100%;          
+    margin: 0;             
     box-sizing: border-box;
 }
 
-/* [유지/수정] 기존 스타일 유지하되, 중앙 정렬을 위해 margin: 0 auto 추가 */
 .bnf_M1 {
-    margin: 0 auto 150px;  /* 중앙 정렬 추가 */
+    margin: 0 auto 150px;  
     width: 100%;
     max-width: 1420px;
     position: relative;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
     border-radius: 20px;
     overflow: hidden;
 }
-
+.bnf_M1 > p { 
+    height: 100%;
+}
 .bnf_M1 > p > img {
     width: 100%;
 }
-
 .bnf_M1 > div {
     font-size: 97.74px;
     font-weight: bold;
@@ -36,28 +35,31 @@
     font-family: 'Hakgyoansim_PosterB';
 }
 
-/* [유지/수정] 중앙 정렬을 위해 margin: 0 auto 추가 */
 .bnf_M2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: url(../../img/common/main-line.png) center bottom no-repeat; /* center로 변경 */
-    padding-bottom: 30px;
+    background: url(../../img/common/main-line.png) center bottom no-repeat;
+    padding-bottom: 70px;
     gap: 35px;
-    max-width: 1420px;      /* 폭 제한 */
-    margin: 0 auto;         /* 중앙 정렬 */
+    max-width: 1420px;     
+    margin: 0 auto;         
 }
 
 .bnf_M2 > h2 {
-    font-size: 80px;
+    font-size: 100px;
     color: #3A302E;
     font-family: 'Hakgyoansim_PosterB';
     font-weight: 700;
+    position: absolute;
+}
+.paw{
+    position: relative;
+    right: -205px; top: -40px;
 }
 
-/* [핵심 수정] 배경은 100% 꽉 차게, 내부 요소만 중앙 정렬 */
 .bnf_M3 {
-    width: 100%;            /* 화면 꽉 채우기 */
+    width: 100%;            
     margin: 114px 0;
     padding: 95px 0;
     background-color: #F3F3F3;
@@ -71,8 +73,8 @@
     text-align: center;
     color: #3A302E;
     font-family: 'Paperlogy';
-    max-width: 1420px;      /* 폭 제한 추가 */
-    margin: 0 auto;         /* 중앙 정렬 추가 */
+    max-width: 1420px;     
+    margin: 0 auto;        
 }
 
 .bnf_M3 > p > span {
@@ -81,15 +83,14 @@
 }
 
 .bnf_M3 > div {
-    max-width: 1035px;      /* 원본 유지 */
+    max-width: 1035px;     
     display: flex;
     flex-wrap: wrap;
     justify-content: center; 
-    margin: 0 auto;         /* 중앙 정렬 유지 */
+    margin: 0 auto;         
     gap: 100px;
 }
 
-/* [유지] 혜택 박스 공통 스타일 */
 .btn_M3 {
     width: 278.09px; height: 278.09px;
     background-color: #3A302E;
@@ -132,7 +133,8 @@
         margin-left: auto;
         margin-right: auto;
     }
-    .bnf_M1 { margin-bottom: 80px; }
+    .bnf_M2 { padding-bottom: 30px; }
+    .bnf_M1 { margin-bottom: 80px; height: 100%; }
     .bnf_M1 > div { 
         position: absolute; 
         bottom: 30px; 
@@ -141,28 +143,16 @@
         -webkit-text-stroke: 2px black;
     }
     .bnf_M2 > h2 { font-size: 60px; }
+    .paw { right: -130px; top: -30px; }
+    .paw > svg { width: 56px; height: 54px; }
     .bnf_M3 { width: 100%; padding: 100px 0 150px; margin: 100px 0; }
-    .bnf_M3 > p {
-        font-size: 28px;
-        width: calc(100% - 40px);
-        margin: 0 auto;
-    }
-    .bnf_M3 > div {
-        gap: 40px;
-        max-width: 100%;
-        padding: 0 20px; 
-        box-sizing: border-box;
-    }
-    .btn_M3{
-        height: auto;
-        aspect-ratio: 1 / 1; 
-        padding: 20px;
-        box-sizing: border-box;
-    }
+    .bnf_M3 > p { font-size: 28px; width: calc(100% - 40px); margin: 0 auto; }
+    .bnf_M3 > div { gap: 40px; max-width: 100%; padding: 0 20px; box-sizing: border-box; }
+    .btn_M3{ height: auto; aspect-ratio: 1 / 1; padding: 20px; box-sizing: border-box; }
 }
 
 @media (max-width: 768px) {
-    .bnf_main { padding: 100px 0 50px; }
+    .bnf_main { padding: 230px 0 100px; }
     .bnf_M1, .bnf_M2 {
         width: calc(100% - 30px); 
         margin-left: auto;
@@ -176,15 +166,10 @@
         left: 20px;
     }
     .bnf_M2 { padding-bottom: 20px; }
-    .bnf_M2 > h2 {
-        font-size: 30px;
-        background-size: 80% auto;
-    }
-    .bnf_M3 {
-        width: 100%; 
-        padding: 60px 0;
-        margin: 50px 0; 
-    }
+    .bnf_M2 > h2 { font-size: 30px; background-size: 80% auto; }
+    .paw { right: -63px; top: -12px; }
+    .paw > svg { width: 26px; height: 24px; }
+    .bnf_M3 { width: 100%; padding: 60px 0; margin: 50px 0; }
     .bnf_M3 > p {
         font-size: 16px;
         line-height: 1.4;
@@ -192,11 +177,7 @@
         padding: 0 20px; 
         margin: 0 auto;
     }
-    .bnf_M3 > div {
-        gap: 20px;
-        padding: 0 20px; 
-        box-sizing: border-box;
-    }
+    .bnf_M3 > div { gap: 20px; padding: 0 20px; box-sizing: border-box; }
     .btn_M3 {
         width: 150px;
         height: 150px;
@@ -207,23 +188,13 @@
         align-items: center;
         gap: 10px;
     }
-    .btn_M3 > p {
-        width: 40px; height: 40px;
-        
-    }
-    .btn_M3 > p svg {
-        width: 100%; height: 100%; 
-    }
-    .btn_M3 > div {
-        font-size: 12px; 
-    }
+    .btn_M3 > p { width: 40px; height: 40px; }
+    .btn_M3 > p svg { width: 100%; height: 100%; }
+    .btn_M3 > div { font-size: 12px; }
 
     .floating-btn{ display: none;}
     :root { --swiper-navigation-size: 20px;}
-
-
 }
-
 
 @media (hover: none) {
     .bnf_M3 > div > div:active {
@@ -232,7 +203,5 @@
         transform: scale(0.98);
         transition: 0.1s;
     }
-    .bnf_M3 > div > div:active > p > svg {
-        fill: #3A302E !important;
-    }
+    .bnf_M3 > div > div:active > p > svg { fill: #3A302E !important; }
 }
