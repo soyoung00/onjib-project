@@ -268,10 +268,9 @@ input[type=radio] {
 
 .end-line {
   display: flex;
-  padding-bottom: 40px;
+  margin-top: -40px;
+  margin-bottom: 110px;
   justify-content: center;
-  width: 1390px;
-  margin: 0 auto;
 }
 .end-line img {
   width: 100%;
@@ -396,6 +395,14 @@ input[type=radio] {
     stroke-dashoffset: 0;
   }
 }
+.end-line {
+  width: 1390px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 1%;
+}
+
 /* =====================================================================
 =====================================================================
 =================================1500====================================
@@ -532,7 +539,7 @@ input[type=radio] {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    gap: 10px;
+    gap: px;
     width: 90%;
     margin-bottom: 60px;
   }
@@ -621,7 +628,7 @@ input[type=radio] {
   .end-line {
     display: flex;
     margin-top: -40px;
-    margin-bottom: 110px;
+    margin-bottom: 5%;
     justify-content: center;
   }
   .next-btn {
@@ -958,7 +965,7 @@ input[type=radio] {
   .end-line {
     display: flex;
     margin-top: -40px;
-    margin-bottom: 110px;
+    margin-bottom: 5%;
     justify-content: center;
   }
   .next-btn {
@@ -1313,7 +1320,7 @@ input[type=radio] {
   .end-line {
     display: flex;
     margin-top: -40px;
-    margin-bottom: 110px;
+    margin-bottom: 5%;
     justify-content: center;
   }
   .next-btn {

@@ -296,10 +296,9 @@ input[type="radio"] {
 
 .end-line {
     display: flex;
-    padding-bottom: 40px;
+    margin-top: -40px;
+    margin-bottom: 110px;
     justify-content: center;
-    width: 1390px;
-    margin: 0 auto;
     img{
         width: 100%;
     }
@@ -440,5 +439,12 @@ input[type="radio"] {
     }
 }
 
+.end-line{
+    width: 1390px;
+    display : flex;
+    justify-content: center;
+    margin : 0 auto;
+    margin-bottom: 1%
+}
 
 @import "_m-donation";
