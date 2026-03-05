@@ -117,6 +117,17 @@
   transition: 0.3s;
 }
 
+.rvs_M2 > ul > li {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.rvs_M2 > ul > li.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .rvs_M2 > ul > li:hover {
   transform: scale(1.06);
   filter: brightness(0.5);
@@ -213,7 +224,7 @@
 }
 @media (max-width: 768px) {
   .rvs_main {
-    padding: 230px 15px 100px;
+    padding: 230px 5% 100px;
   }
   .bnf_M1 {
     margin-bottom: 50px;
