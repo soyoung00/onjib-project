@@ -315,7 +315,7 @@
 }
 @media (max-width: 768px) {
   .intake_M {
-    padding: 230px 15px 100px;
+    padding: 230px 5% 100px;
   }
   .rvs_S1 {
     margin-bottom: 50px;
@@ -354,7 +354,7 @@
     width: 100%;
   }
   .intake_2 > div > div {
-    width: 90%;
+    width: 100%;
   }
   .intake_2 > div > h3 {
     font-size: 20px;

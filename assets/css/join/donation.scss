@@ -1,14 +1,7 @@
 @import url('../common/common.css');
 @import url('../common/font.css');
 
-
-.bnf_M1>p>img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center -150px;
-}
-
+$w : 1390px;
 
 .text-box .sub {
     font-size: 40px;
@@ -40,7 +33,7 @@
     font-weight: 700;
     font-size: 20px;
     color: white;
-    background-color: rgb(173,173,173);
+    background-color: rgb(173, 173, 173);
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -53,7 +46,7 @@
 
 .step-item.active {
     color: white;
-    background-color: rgb(255,157,0);
+    background-color: rgb(255, 157, 0);
 }
 
 .step-line {
@@ -78,12 +71,12 @@
     display: inline-block;
 }
 
-.section-header .section-title > img{
+.section-header .section-title>img {
     position: absolute;
     top: -45px;
     right: -55px;
     width: 70px;
-    height : 65px;
+    height: 65px;
 }
 
 .donation-btn {
@@ -116,13 +109,13 @@
     justify-content: center;
 }
 
-.donation-btn:hover{
-    background-color: rgb(255,157,0);
+.donation-btn:hover {
+    background-color: rgb(255, 157, 0);
     transform: translateY(-6px);
 }
 
-.donation-btn:active{
-    transform:translateY(-2px);
+.donation-btn:active {
+    transform: translateY(-2px);
 }
 
 
@@ -136,68 +129,70 @@
 
 
 
-.donation{
+.donation {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 180px;
-    width: 1390px;
+    width: $w;
     margin: 0 auto;
 }
 
-.donation form{
+.donation form {
     display: flex;
     flex-direction: column;
     gap: 30px;
+    width: 100%;
 }
-.donation-text{
+
+.donation-text {
     font-family: Paperlogy;
     font-weight: 700;
     font-size: 30px;
-    color: rgb(58,48,46);
+    color: rgb(58, 48, 46);
     letter-spacing: 1.25px;
-    
+
 }
 
 
 input[type="radio"] {
-    accent-color: rgb(255,157,0);
+    accent-color: rgb(255, 157, 0);
 }
 
 
-.empty-box{
+.empty-box {
     width: 100%;
 }
 
-.box{
+.box {
     display: flex;
     gap: 46px;
-    border: 2px solid rgb(217,217,217);
+    border: 2px solid rgb(217, 217, 217);
     border-radius: 20px;
-    padding : 30px;
+    padding: 30px;
     width: 100%;
 }
 
 
 .box .box-text {
-    font-family : Paperlogy;
+    font-family: Paperlogy;
     font-weight: 400;
-    font-size : 18px;
+    font-size: 18px;
     letter-spacing: 1px;
 }
 
 
 
-.section{
+.section {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     gap: px;
-    width: 1390px;
+    width: $w;
     margin-bottom: 60px;
 }
 
-.section:nth-of-type(1){
+.section:nth-of-type(1) {
     padding-top: 100px;
 }
 
@@ -209,9 +204,10 @@ input[type="radio"] {
     gap: 8px;
 }
 
-.box input[type="number"]{
-    width: 154px;   /* 160~200 사이로 조절 */
-    padding: 10px 6px ;
+.box input[type="number"] {
+    width: 154px;
+    /* 160~200 사이로 조절 */
+    padding: 10px 6px;
 }
 
 .payment-group {
@@ -221,12 +217,13 @@ input[type="radio"] {
 
 .payment-option {
     cursor: pointer;
-    
+
 }
 
 .payment-option input {
-    display: none; /* 기본 동그라미 숨김 */
-    
+    display: none;
+    /* 기본 동그라미 숨김 */
+
 }
 
 .payment-option span {
@@ -235,33 +232,34 @@ input[type="radio"] {
     font-size: 18px;
     letter-spacing: 1.25px;
 
-    border: 2px solid rgb(217,217,217);
+    border: 2px solid rgb(217, 217, 217);
     border-radius: 20px;
     padding: 24px 30px;
     background: white;
     display: inline-block;
 }
+
 /* 선택되었을 때 */
-.payment-option input:checked + span {
-    background-color: rgb(255,157,0);
+.payment-option input:checked+span {
+    background-color: rgb(255, 157, 0);
     color: white;
 }
 
-.billing-select{
+.billing-select {
     text-align: center;
     border-radius: 20px;
     height: 80px;
     width: 220px;
     font-family: Paperlogy;
     font-weight: 400;
-    font-size : 18px;
+    font-size: 18px;
     letter-spacing: 1.2px;
-    border-color: rgb(217,217,217);
+    border-color: rgb(217, 217, 217);
     appearance: none;
 }
 
 .form-box {
-    border: 2px solid rgb(217,217,217);
+    border: 2px solid rgb(217, 217, 217);
     border-radius: 20px;
     padding: 0px 30px;
     height: 80px;
@@ -269,11 +267,12 @@ input[type="radio"] {
 
     display: flex;
     align-items: center;
-    .form-box-text{
-    align-items: center;
-    font-family: Paperlogy;
-    font-size: 18px;
-    letter-spacing: 0.5px;
+
+    .form-box-text {
+        align-items: center;
+        font-family: Paperlogy;
+        font-size: 18px;
+        letter-spacing: 0.5px;
     }
 }
 
@@ -285,50 +284,54 @@ input[type="radio"] {
 }
 
 
-.agreement-text{
+.agreement-text {
     font-size: 18px;
 }
 
 .privacy-agreement input[type="checkbox"] {
-    accent-color: rgb(255,157,0);
+    accent-color: rgb(255, 157, 0);
     transform: scale(1.4);
     cursor: pointer;
 }
 
-.end-line{
+.end-line {
     display: flex;
     margin-top: -40px;
     margin-bottom: 110px;
     justify-content: center;
+    img{
+        width: 100%;
+    }
 }
 
 .next-btn {
     display: block;
-    margin: 0 auto;   /* 가운데 정렬 */
-    
+    margin: 0 auto;
+    /* 가운데 정렬 */
+
     padding: 15px 20px;
-    
+
     border: none;
     border-radius: 20px;
-    
-    background-color: rgb(255,157,0);
+
+    background-color: rgb(255, 157, 0);
     color: white;
-    
+
     font-family: Paperlogy;
     font-size: 24px;
     font-weight: 700;
 
     cursor: pointer;
-    
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-    margin-bottom:70px;
-    
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 70px;
+
 }
 
 
 /* ======================== donation-step3 ========================= */
 
-.step3-group{
+.step3-group {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -336,17 +339,18 @@ input[type="radio"] {
     text-align: center;
     gap: 50px;
     margin-top: 100px;
-    .complete-text{
-    font-family: Paperlogy;
-    font-weight: 500;
-    font-size: 38px;
-    line-height: 55px;
+
+    .complete-text {
+        font-family: Paperlogy;
+        font-weight: 500;
+        font-size: 38px;
+        line-height: 55px;
     }
 }
 
-.home-btn{
+.home-btn {
     padding: 15px 25px;
-    background-color: rgb(255,157,0);
+    background-color: rgb(255, 157, 0);
     border-radius: 14px;
     color: white;
     font-family: Paperlogy;
@@ -355,16 +359,16 @@ input[type="radio"] {
 }
 
 @keyframes color-sweep {
-    to { background-position: 0% 0; }
+    to {
+        background-position: 0% 0;
+    }
 }
 
 .complete-text p {
-    background: linear-gradient(
-        105deg,
-        #222 0%,
-        #222 50%,
-        #ccc 50%
-    );
+    background: linear-gradient(105deg,
+            #222 0%,
+            #222 50%,
+            #ccc 50%);
     background-size: 220% 100%;
     background-position: 100% 0;
     -webkit-background-clip: text;
@@ -424,9 +428,16 @@ input[type="radio"] {
 }
 
 @keyframes draw-ring {
-    to { stroke-dashoffset: 0; }
+    to {
+        stroke-dashoffset: 0;
+    }
 }
 
 @keyframes draw-check {
-    to { stroke-dashoffset: 0; }
+    to {
+        stroke-dashoffset: 0;
+    }
 }
+
+
+@import "_m-donation";

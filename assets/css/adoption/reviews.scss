@@ -106,6 +106,15 @@
     box-shadow: 0 4px 4px rgba(0,0,0,0.25);
     transition: 0.3s;
 }
+.rvs_M2 > ul > li {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.rvs_M2 > ul > li.show {
+    opacity: 1;
+    transform: translateY(0);
+}
 .rvs_M2 > ul > li:hover{
     transform: scale(1.06);
     filter: brightness(0.5);
@@ -168,7 +177,7 @@
 }
 
 @media (max-width: 768px) {
-    .rvs_main { padding: 230px 15px 100px; }
+    .rvs_main { padding: 230px 5% 100px; }
     .bnf_M1 { margin-bottom: 50px; height: 100%; }
     .bnf_M1 > div { 
         font-size: 30px; -webkit-text-stroke: 2px black; 

@@ -6,10 +6,11 @@
 
 .bnf_M1 > img {
   width: 100%;
-  height: auto;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  transform: translateY(-90px);
+  -o-object-position: center;
+     object-position: center;
 }
 
 .text-box {
@@ -170,7 +171,8 @@
 }
 
 .dog-grid {
-  width: 1420px;
+  width: 100%;
+  max-width: 1420px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
@@ -231,4 +233,66 @@
   display: -webkit-box;
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
+}
+
+@media (max-width: 768px) {
+  .text-box {
+    left: 20px;
+    bottom: 40px;
+  }
+  .text-box .title {
+    font-size: 36px;
+  }
+  .section-subtitle {
+    font-size: 18px;
+    text-align: center;
+  }
+  .section-header .section-title {
+    font-size: 28px;
+    text-align: center;
+  }
+  .line {
+    margin-bottom: 80px;
+  }
+  .dog-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .dog-thumb img {
+    height: 300px;
+  }
+  .dog-info {
+    font-size: 16px;
+  }
+  .pagination {
+    gap: 20px;
+  }
+  .pagination .page-list {
+    gap: 16px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .text-box {
+    left: 60px;
+    bottom: 80px;
+  }
+  .text-box .title {
+    font-size: 60px;
+  }
+  .section-subtitle {
+    font-size: 24px;
+  }
+  .section-header .section-title {
+    font-size: 42px;
+  }
+  .dog-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+  .dog-thumb img {
+    height: 240px;
+  }
+  .dog-info {
+    font-size: 18px;
+  }
 }/*# sourceMappingURL=adoption.css.map */
