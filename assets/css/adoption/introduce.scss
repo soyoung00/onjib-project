@@ -660,39 +660,6 @@ html, body {
 
 
 
-.margin .bnf_M1 {
-  width: 100%;
-  max-width: 1420px;
-  margin: 0 auto 80px;
-  position: relative;
-  overflow: hidden;
-  border-radius: 20px; 
-}
-
-
-.margin .bnf_M1 > a {
-  display: block;
-  position: relative;
-}
-
-
-.margin .bnf_M1 > a > img {
-  width: 100%;
-  height: clamp(220px, 35vw, 460px); 
-  object-fit: cover;
-  object-position: center;
-  display: block;
-  transform: none;
-}
-
-
-.margin .bnf_M1 .text-box {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
 @media (max-width: 1024px) {
   .intro-top {
@@ -733,22 +700,6 @@ html, body {
   .margin .bnf_M1 > a > img {
     height: 220px;
   }
-}
-
-.bnf_M1 img {
-  transform: none !important;
-  object-fit: cover;
-  object-position: center 60% !important; 
-}
-
-.bnf_M1 .text-box {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) !important;
-  width: 100%;
-  text-align: center;
-  pointer-events: none;
 }
 
 @media (max-width: 768px) {

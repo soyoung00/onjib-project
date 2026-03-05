@@ -323,7 +323,7 @@
   }
   .about .about-center .mySwiper {
     width: 100%;
-    height: 350px;
+    height: 400px;
     position: relative;
   }
   .about .about-center .mySwiper .swiper-pagination {
@@ -338,6 +338,7 @@
     align-items: center;
   }
   .about .about-center .mySwiper .swiper-slide img {
+    width: 90%;
     display: block;
     -o-object-fit: cover;
        object-fit: cover;
@@ -345,11 +346,15 @@
   .about .center-info {
     padding: 0;
   }
+  .about .center-info > div:nth-of-type(1) {
+    width: 90%;
+  }
   .about .center-info > div:nth-of-type(1) h2::before {
     right: 0%;
     top: 1em;
   }
   .about .center-info > div:nth-of-type(2) {
+    width: 90%;
     padding: 80px 0;
   }
   .about .center-info > div:nth-of-type(2) article {
@@ -362,6 +367,7 @@
     width: 100%;
   }
   .about .center-space {
+    width: 90%;
     margin-top: 50px;
   }
   .about .center-space > div:nth-of-type(1) h2::before {

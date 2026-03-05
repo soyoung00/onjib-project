@@ -20,6 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     pageData.forEach(item => {
       console.log("성별값:", item.ANIMAL_SEX);
+      console.log(pageData[0]);
 
       const sex = (item.ANIMAL_SEX || "").trim().toUpperCase();
       const isFemale = sex === "W";
