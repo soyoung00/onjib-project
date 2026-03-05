@@ -395,6 +395,14 @@ input[type=radio] {
     stroke-dashoffset: 0;
   }
 }
+.end-line {
+  width: 1390px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 1%;
+}
+
 /* =====================================================================
 =====================================================================
 =================================1500====================================
@@ -620,7 +628,7 @@ input[type=radio] {
   .end-line {
     display: flex;
     margin-top: -40px;
-    margin-bottom: 110px;
+    margin-bottom: 5%;
     justify-content: center;
   }
   .next-btn {
@@ -957,7 +965,7 @@ input[type=radio] {
   .end-line {
     display: flex;
     margin-top: -40px;
-    margin-bottom: 110px;
+    margin-bottom: 5%;
     justify-content: center;
   }
   .next-btn {
@@ -1312,7 +1320,7 @@ input[type=radio] {
   .end-line {
     display: flex;
     margin-top: -40px;
-    margin-bottom: 110px;
+    margin-bottom: 5%;
     justify-content: center;
   }
   .next-btn {

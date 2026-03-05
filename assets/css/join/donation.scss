@@ -439,5 +439,12 @@ input[type="radio"] {
     }
 }
 
+.end-line{
+    width: 1390px;
+    display : flex;
+    justify-content: center;
+    margin : 0 auto;
+    margin-bottom: 1%
+}
 
 @import "_m-donation";
