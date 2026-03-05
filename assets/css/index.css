@@ -272,7 +272,7 @@ main .main-spot > div {
 }
 .adoption-list > div:nth-of-type(1) h2 {
   font-family: "Hakgyoansim_PosterB";
-  font-size: clamp(36px, 7vw, 90px);
+  font-size: clamp(30px, 7vw, 90px);
   letter-spacing: 6px;
 }
 .adoption-list > div:nth-of-type(1) h2 img:nth-of-type(1) {
@@ -423,6 +423,12 @@ main .main-spot > div {
   }
 }
 @media screen and (max-width: 480px) {
+  .mySwiper {
+    width: 90%;
+  }
+  .mySwiperAdoption {
+    width: 90% !important;
+  }
   .news-spot .swiper-button-prev {
     left: 3% !important;
     right: auto !important;
@@ -430,6 +436,9 @@ main .main-spot > div {
   .news-spot .swiper-button-next {
     right: 3% !important;
     left: auto !important;
+  }
+  .news-spot > div > div:nth-of-type(1) {
+    width: 90%;
   }
   .chart-spot {
     flex-direction: column;
@@ -453,6 +462,9 @@ main .main-spot > div {
   }
   .adoption-list .main-line img {
     display: none !important;
+  }
+  .adoption-list > div:nth-of-type(1) {
+    width: 90%;
   }
   .adoption-list > div:nth-of-type(1) h2 {
     letter-spacing: 0px;
