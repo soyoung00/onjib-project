@@ -2,6 +2,7 @@
 @import url('common/common.css');
 
 .about {
+    overflow: hidden;
 
 
 
@@ -88,7 +89,6 @@
         >div {
 
             color: #fff;
-            -webkit-text-stroke: 2px #3A302E;
             display: flex;
             flex-direction: column;
             gap: clamp(3px, 2vw, 20px);
