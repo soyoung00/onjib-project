@@ -1,0 +1,1321 @@
+/* =====================================================================
+=====================================================================
+=================================1500====================================
+=====================================================================
+===================================================================== */
+
+@media (max-width:1500px) {
+
+
+    $w : 90%;
+
+
+
+    .step {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .step-item {
+        font-family: Paperlogy;
+        font-weight: 700;
+        font-size: 20px;
+        color: white;
+        background-color: rgb(173, 173, 173);
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .step-item.active {
+        color: white;
+        background-color: rgb(255, 157, 0);
+    }
+
+    .step-line {
+        width: 113px;
+        height: 1px;
+        background-color: rgb(173, 173, 173);
+    }
+
+    .section-header {
+        margin-top: 100px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        img {
+            width: 100%
+        }
+    }
+
+    .section-header .section-title {
+        font-family: MemomentKKukkukk;
+        font-size: 68px;
+        color: rgb(58, 48, 46);
+        margin-bottom: 50px;
+        position: relative;
+        display: inline-block;
+    }
+
+    .section-header .section-title>img {
+        position: absolute;
+        top: -45px;
+        right: -55px;
+        width: 70px;
+        height: 65px;
+    }
+
+    .donation-btn {
+        margin-top: 170px;
+        display: flex;
+        flex-direction: column;
+        width: 34vw;
+        height: 34vw;
+        border-radius: 7vw;
+        background-color: rgb(58, 48, 46);
+        justify-content: center;
+        align-items: center;
+        gap: 32px;
+
+        transition: 0.3s ease;
+    }
+
+    .donation-btn>img {
+        width: 10vw;
+        height: 10vw
+    }
+
+    .donation-btn>span {
+        display: flex;
+        width: 50%;
+        font-family: Paperlogy;
+        font-weight: 700;
+        font-size: 4vw;
+        color: white;
+        justify-content: center;
+    }
+
+    .donation-btn:hover {
+        background-color: rgb(255, 157, 0);
+        transform: translateY(-6px);
+    }
+
+    .donation-btn:active {
+        transform: translateY(-2px);
+    }
+
+
+
+
+
+
+
+    /* ======================== donation-step2 ========================= */
+
+
+
+
+    .donation {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10%;
+        width: $w;
+        margin: 0 auto;
+    }
+
+    .donation form {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .donation-text {
+        font-family: Paperlogy;
+        font-weight: 700;
+        font-size: 30px;
+        color: rgb(58, 48, 46);
+        letter-spacing: 1.25px;
+
+    }
+
+
+    input[type="radio"] {
+        accent-color: rgb(255, 157, 0);
+    }
+
+
+    .empty-box {
+        width: 100%;
+    }
+
+    .box {
+        display: flex;
+        gap: 46px;
+        border: 2px solid rgb(217, 217, 217);
+        border-radius: 20px;
+        padding: 30px;
+        width: 100%;
+    }
+
+
+    .box .box-text {
+        font-family: Paperlogy;
+        font-weight: 400;
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
+
+
+
+    .section {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: px;
+        width: $w;
+        margin-bottom: 60px;
+    }
+
+    .section:nth-of-type(1) {
+        padding-top: 100px;
+    }
+
+
+
+    .custom-input {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .box input[type="number"] {
+        width: 154px;
+        /* 160~200 사이로 조절 */
+        padding: 10px 6px;
+    }
+
+    .payment-group {
+        display: flex;
+        gap: 30px;
+    }
+
+    .payment-option {
+        cursor: pointer;
+
+    }
+
+    .payment-option input {
+        display: none;
+        /* 기본 동그라미 숨김 */
+
+    }
+
+    .payment-option span {
+        font-family: Paperlogy;
+        font-weight: 400;
+        font-size: 18px;
+        letter-spacing: 1.25px;
+
+        border: 2px solid rgb(217, 217, 217);
+        border-radius: 20px;
+        padding: 24px 30px;
+        background: white;
+        display: inline-block;
+    }
+
+    /* 선택되었을 때 */
+    .payment-option input:checked+span {
+        background-color: rgb(255, 157, 0);
+        color: white;
+    }
+
+    .billing-select {
+        text-align: center;
+        border-radius: 20px;
+        height: 80px;
+        width: 220px;
+        font-family: Paperlogy;
+        font-weight: 400;
+        font-size: 18px;
+        letter-spacing: 1.2px;
+        border-color: rgb(217, 217, 217);
+        appearance: none;
+    }
+
+    .form-box {
+        border: 2px solid rgb(217, 217, 217);
+        border-radius: 20px;
+        padding: 0px 30px;
+        height: 80px;
+        width: 240px;
+
+        display: flex;
+        align-items: center;
+
+        .form-box-text {
+            align-items: center;
+            font-family: Paperlogy;
+            font-size: 18px;
+            letter-spacing: 0.5px;
+        }
+    }
+
+
+    .form-box input {
+        border: none;
+        outline: none;
+        width: 100%;
+    }
+
+
+    .agreement-text {
+        font-size: 18px;
+    }
+
+    .privacy-agreement input[type="checkbox"] {
+        accent-color: rgb(255, 157, 0);
+        transform: scale(1.4);
+        cursor: pointer;
+    }
+
+    .end-line {
+        display: flex;
+        margin-top: -40px;
+        margin-bottom: 110px;
+        justify-content: center;
+    }
+
+    .next-btn {
+        display: block;
+        margin: 0 auto;
+        /* 가운데 정렬 */
+
+        padding: 15px 20px;
+
+        border: none;
+        border-radius: 20px;
+
+        background-color: rgb(255, 157, 0);
+        color: white;
+
+        font-family: Paperlogy;
+        font-size: 24px;
+        font-weight: 700;
+
+        cursor: pointer;
+
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        margin-bottom: 70px;
+
+    }
+
+
+    /* ======================== donation-step3 ========================= */
+
+    .step3-group {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 50px;
+        margin-top: 100px;
+
+        .complete-text {
+            font-family: Paperlogy;
+            font-weight: 500;
+            font-size: 38px;
+            line-height: 55px;
+        }
+    }
+
+    .home-btn {
+        padding: 15px 25px;
+        background-color: rgb(255, 157, 0);
+        border-radius: 14px;
+        color: white;
+        font-family: Paperlogy;
+        font-weight: 500;
+        font-size: 16px;
+    }
+
+    @keyframes color-sweep {
+        to {
+            background-position: 0% 0;
+        }
+    }
+
+    .complete-text p {
+        background: linear-gradient(105deg,
+                #222 0%,
+                #222 50%,
+                #ccc 50%);
+        background-size: 220% 100%;
+        background-position: 100% 0;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        animation: color-sweep 1s ease forwards;
+    }
+
+    .complete-text p:nth-child(1) {
+        animation-delay: 0.5s;
+    }
+
+    .complete-text p:nth-child(2) {
+        animation-delay: 0.8s;
+    }
+
+    .check-icon {
+        width: 130px;
+        height: 130px;
+    }
+
+    .ring-gray {
+        stroke: #ccc;
+        stroke-width: 6;
+        fill: none;
+    }
+
+    .check-gray {
+        stroke: #ccc;
+        stroke-width: 7;
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+    }
+
+    .ring-color {
+        stroke: rgb(255, 157, 0);
+        stroke-width: 6;
+        fill: none;
+        stroke-dasharray: 295;
+        stroke-dashoffset: 295;
+        stroke-linecap: round;
+        transform-origin: center;
+        transform: rotate(-90deg);
+        animation: draw-ring 0.7s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    }
+
+    .check-color {
+        stroke: rgb(255, 157, 0);
+        stroke-width: 7;
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-dasharray: 85;
+        stroke-dashoffset: 85;
+        animation: draw-check 0.5s ease forwards 0.6s;
+    }
+
+    @keyframes draw-ring {
+        to {
+            stroke-dashoffset: 0;
+        }
+    }
+
+    @keyframes draw-check {
+        to {
+            stroke-dashoffset: 0;
+        }
+    }
+
+}
+
+
+/* =====================================================================
+=====================================================================
+=================================1130====================================
+=====================================================================
+===================================================================== */
+
+
+@media (max-width:1130px) {
+
+    $w : 90%;
+
+    .step {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .step-item {
+        font-family: Paperlogy;
+        font-weight: 700;
+        font-size: 20px;
+        color: white;
+        background-color: rgb(173, 173, 173);
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .step-item.active {
+        color: white;
+        background-color: rgb(255, 157, 0);
+    }
+
+    .step-line {
+        width: 10%;
+        height: 1px;
+        background-color: rgb(173, 173, 173);
+    }
+
+    .section-header {
+        margin-top: 100px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        img {
+            width: 100%
+        }
+    }
+
+    .section-header .section-title {
+        font-family: MemomentKKukkukk;
+        font-size: 68px;
+        color: rgb(58, 48, 46);
+        margin-bottom: 50px;
+        position: relative;
+        display: inline-block;
+    }
+
+    .section-header .section-title>img {
+        position: absolute;
+        top: -45px;
+        right: -55px;
+        width: 70px;
+        height: 65px;
+    }
+
+    .donation-btn {
+        margin-top: 170px;
+        display: flex;
+        flex-direction: column;
+        width: 34vw;
+        height: 34vw;
+        border-radius: 7vw;
+        background-color: rgb(58, 48, 46);
+        justify-content: center;
+        align-items: center;
+        gap: 32px;
+
+        transition: 0.3s ease;
+    }
+
+    .donation-btn>img {
+        width: 10vw;
+        height: 10vw
+    }
+
+    .donation-btn>span {
+        display: flex;
+        width: 50%;
+        font-family: Paperlogy;
+        font-weight: 700;
+        font-size: 4vw;
+        color: white;
+        justify-content: center;
+    }
+
+    .donation-btn:hover {
+        background-color: rgb(255, 157, 0);
+        transform: translateY(-6px);
+    }
+
+    .donation-btn:active {
+        transform: translateY(-2px);
+    }
+
+
+
+
+
+
+
+    /* ======================== donation-step2 ========================= */
+
+
+
+
+    .donation {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10%;
+        width: $w;
+        margin: 0 auto;
+    }
+
+    .donation form {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .donation-text {
+        font-family: Paperlogy;
+        font-weight: 700;
+        font-size: 30px;
+        color: rgb(58, 48, 46);
+        letter-spacing: 1.25px;
+
+    }
+
+
+    input[type="radio"] {
+        accent-color: rgb(255, 157, 0);
+    }
+
+
+    .empty-box {
+        width: 100%;
+    }
+
+    .box {
+        display: flex;
+        gap: 46px;
+        border: 2px solid rgb(217, 217, 217);
+        border-radius: 20px;
+        padding: 30px;
+        width: 100%;
+    }
+
+
+    .box .box-text {
+        font-family: Paperlogy;
+        font-weight: 400;
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
+
+
+
+    .section {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: px;
+        width: $w;
+        margin-bottom: 60px;
+    }
+
+    .section:nth-of-type(1) {
+        padding-top: 100px;
+    }
+
+
+
+    .custom-input {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .box input[type="number"] {
+        width: 154px;
+        /* 160~200 사이로 조절 */
+        padding: 10px 6px;
+    }
+
+    .payment-group {
+        display: flex;
+        gap: 30px;
+    }
+
+    .payment-option {
+        cursor: pointer;
+
+    }
+
+    .payment-option input {
+        display: none;
+        /* 기본 동그라미 숨김 */
+
+    }
+
+    .payment-option span {
+        font-family: Paperlogy;
+        font-weight: 400;
+        font-size: 18px;
+        letter-spacing: 1.25px;
+
+        border: 2px solid rgb(217, 217, 217);
+        border-radius: 20px;
+        padding: 24px 30px;
+        background: white;
+        display: inline-block;
+    }
+
+    /* 선택되었을 때 */
+    .payment-option input:checked+span {
+        background-color: rgb(255, 157, 0);
+        color: white;
+    }
+
+    .billing-select {
+        text-align: center;
+        border-radius: 20px;
+        height: 80px;
+        width: 220px;
+        font-family: Paperlogy;
+        font-weight: 400;
+        font-size: 18px;
+        letter-spacing: 1.2px;
+        border-color: rgb(217, 217, 217);
+        appearance: none;
+    }
+
+    .form-box {
+        border: 2px solid rgb(217, 217, 217);
+        border-radius: 20px;
+        padding: 0px 30px;
+        height: 80px;
+        width: 240px;
+
+        display: flex;
+        align-items: center;
+
+        .form-box-text {
+            align-items: center;
+            font-family: Paperlogy;
+            font-size: 18px;
+            letter-spacing: 0.5px;
+        }
+    }
+
+
+    .form-box input {
+        border: none;
+        outline: none;
+        width: 100%;
+    }
+
+
+    .agreement-text {
+        font-size: 18px;
+    }
+
+    .privacy-agreement input[type="checkbox"] {
+        accent-color: rgb(255, 157, 0);
+        transform: scale(1.4);
+        cursor: pointer;
+    }
+
+    .end-line {
+        display: flex;
+        margin-top: -40px;
+        margin-bottom: 110px;
+        justify-content: center;
+    }
+
+    .next-btn {
+        display: block;
+        margin: 0 auto;
+        /* 가운데 정렬 */
+
+        padding: 15px 20px;
+
+        border: none;
+        border-radius: 20px;
+
+        background-color: rgb(255, 157, 0);
+        color: white;
+
+        font-family: Paperlogy;
+        font-size: 24px;
+        font-weight: 700;
+
+        cursor: pointer;
+
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        margin-bottom: 70px;
+
+    }
+
+
+    /* ======================== donation-step3 ========================= */
+
+    .step3-group {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 50px;
+        margin-top: 100px;
+
+        .complete-text {
+            font-family: Paperlogy;
+            font-weight: 500;
+            font-size: 38px;
+            line-height: 55px;
+        }
+    }
+
+    .home-btn {
+        padding: 15px 25px;
+        background-color: rgb(255, 157, 0);
+        border-radius: 14px;
+        color: white;
+        font-family: Paperlogy;
+        font-weight: 500;
+        font-size: 16px;
+    }
+
+    @keyframes color-sweep {
+        to {
+            background-position: 0% 0;
+        }
+    }
+
+    .complete-text p {
+        background: linear-gradient(105deg,
+                #222 0%,
+                #222 50%,
+                #ccc 50%);
+        background-size: 220% 100%;
+        background-position: 100% 0;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        animation: color-sweep 1s ease forwards;
+    }
+
+    .complete-text p:nth-child(1) {
+        animation-delay: 0.5s;
+    }
+
+    .complete-text p:nth-child(2) {
+        animation-delay: 0.8s;
+    }
+
+    .check-icon {
+        width: 130px;
+        height: 130px;
+    }
+
+    .ring-gray {
+        stroke: #ccc;
+        stroke-width: 6;
+        fill: none;
+    }
+
+    .check-gray {
+        stroke: #ccc;
+        stroke-width: 7;
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+    }
+
+    .ring-color {
+        stroke: rgb(255, 157, 0);
+        stroke-width: 6;
+        fill: none;
+        stroke-dasharray: 295;
+        stroke-dashoffset: 295;
+        stroke-linecap: round;
+        transform-origin: center;
+        transform: rotate(-90deg);
+        animation: draw-ring 0.7s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    }
+
+    .check-color {
+        stroke: rgb(255, 157, 0);
+        stroke-width: 7;
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-dasharray: 85;
+        stroke-dashoffset: 85;
+        animation: draw-check 0.5s ease forwards 0.6s;
+    }
+
+    @keyframes draw-ring {
+        to {
+            stroke-dashoffset: 0;
+        }
+    }
+
+    @keyframes draw-check {
+        to {
+            stroke-dashoffset: 0;
+        }
+    }
+}
+
+
+/* =====================================================================
+=====================================================================
+=================================830====================================
+=====================================================================
+===================================================================== */
+
+@media (max-width:830px) {
+    .box {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+
+        .text-box {}
+    }
+
+}
+
+/* =====================================================================
+=====================================================================
+=================================480====================================
+=====================================================================
+===================================================================== */
+
+@media (max-width:480px) {
+
+
+    $w : 90%;
+
+
+
+    .step {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3%;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .step-item {
+        font-family: Paperlogy;
+        font-weight: 700;
+        font-size: 20px;
+        color: white;
+        background-color: rgb(173, 173, 173);
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        flex-shrink: 0;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .step-item.active {
+        color: white;
+        background-color: rgb(255, 157, 0);
+    }
+
+    .step-line {
+        width: 10%;
+        height: 1px;
+        background-color: rgb(173, 173, 173);
+        flex-shrink: 0;
+    }
+
+    .section-header {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 90%;
+        margin: 100px auto 0 auto;
+
+        img {
+            width: 100%
+        }
+    }
+
+    .section-header .section-title {
+        font-family: MemomentKKukkukk;
+        font-size: 30px;
+        color: rgb(58, 48, 46);
+        margin-bottom: 20px;
+        position: relative;
+        display: inline-block;
+        font-weight: bold;
+    }
+
+    .section-header .section-title>img {
+        position: absolute;
+        top: -35px;
+        right: -40px;
+        width: 40px;
+        height: 65px;
+    }
+
+    .donation-btn {
+        margin-top: 30px;
+        display: flex;
+
+        width: 40vw;
+        height: 40vw;
+        border-radius: 25px;
+        background-color: rgb(58, 48, 46);
+        justify-content: center;
+        align-items: center;
+        gap: 2px;
+
+        transition: 0.3s ease;
+    }
+
+    .donation-btn>img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .donation-btn>span {
+        display: flex;
+        width: 50%;
+        font-family: Paperlogy;
+        font-weight: 700;
+        font-size: 12px;
+        color: white;
+        justify-content: center;
+    }
+
+    .donation-btn:hover {
+        background-color: rgb(255, 157, 0);
+        transform: translateY(-6px);
+    }
+
+    .donation-btn:active {
+        transform: translateY(-2px);
+    }
+
+
+
+
+
+
+
+    /* ======================== donation-step2 ========================= */
+
+
+
+
+    .donation {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10%;
+        width: $w;
+        margin: 0 auto;
+    }
+
+    .donation form {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .donation-text {
+        font-family: Paperlogy;
+        font-weight: 700;
+        font-size: 20px;
+        color: rgb(58, 48, 46);
+        letter-spacing: 1.25px;
+
+    }
+
+
+    input[type="radio"] {
+        accent-color: rgb(255, 157, 0);
+    }
+
+
+    .empty-box {
+        width: 100%;
+    }
+
+    .box {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 46px;
+        border: 2px solid rgb(217, 217, 217);
+        border-radius: 20px;
+        padding: 30px;
+        width: 100%;
+    }
+
+
+    .box .box-text {
+        font-family: Paperlogy;
+        font-weight: 400;
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
+
+
+
+    .section {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: px;
+        width: 100%;
+        margin-bottom: 60px;
+    }
+
+    .section:nth-of-type(1) {
+        padding-top: 100px;
+    }
+
+
+
+    .custom-input {
+        display: inline-block;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .box input[type="number"] {
+        width: 154px;
+        /* 160~200 사이로 조절 */
+        padding: 10px 6px;
+    }
+
+    .payment-group {
+        display: flex;
+        gap: 30px;
+    }
+
+    .payment-option {
+        cursor: pointer;
+
+    }
+
+    .payment-option input {
+        display: none;
+        /* 기본 동그라미 숨김 */
+
+    }
+
+    .payment-option span {
+        font-family: Paperlogy;
+        font-weight: 400;
+        font-size: 18px;
+        letter-spacing: 1.25px;
+
+        border: 2px solid rgb(217, 217, 217);
+        border-radius: 20px;
+        padding: 24px 30px;
+        background: white;
+        display: inline-block;
+    }
+
+    /* 선택되었을 때 */
+    .payment-option input:checked+span {
+        background-color: rgb(255, 157, 0);
+        color: white;
+    }
+
+    .billing-select {
+        text-align: center;
+        border-radius: 20px;
+        height: 80px;
+        width: 220px;
+        font-family: Paperlogy;
+        font-weight: 400;
+        font-size: 18px;
+        letter-spacing: 1.2px;
+        border-color: rgb(217, 217, 217);
+        appearance: none;
+    }
+
+    .form-box {
+        border: 2px solid rgb(217, 217, 217);
+        border-radius: 20px;
+        padding: 0px 30px;
+        height: 80px;
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+
+        .form-box-text {
+            align-items: center;
+            font-family: Paperlogy;
+            font-size: 18px;
+            letter-spacing: 0.5px;
+        }
+    }
+
+
+    .form-box input {
+        border: none;
+        outline: none;
+        width: 100%;
+    }
+
+
+    .agreement-text {
+        font-size: 18px;
+    }
+
+    .privacy-agreement input[type="checkbox"] {
+        accent-color: rgb(255, 157, 0);
+        transform: scale(1.4);
+        cursor: pointer;
+    }
+
+    .end-line {
+        display: flex;
+        margin-top: -40px;
+        margin-bottom: 110px;
+        justify-content: center;
+    }
+
+    .next-btn {
+        display: block;
+        margin: 0 auto;
+        /* 가운데 정렬 */
+
+        padding: 15px 20px;
+
+        border: none;
+        border-radius: 20px;
+
+        background-color: rgb(255, 157, 0);
+        color: white;
+
+        font-family: Paperlogy;
+        font-size: 24px;
+        font-weight: 700;
+
+        cursor: pointer;
+
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        margin-bottom: 70px;
+
+    }
+
+
+    /* ======================== donation-step3 ========================= */
+
+    .step3-group {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 50px;
+        margin-top: 100px;
+
+        .complete-text {
+            font-family: Paperlogy;
+            font-weight: 500;
+            font-size: 38px;
+            line-height: 55px;
+        }
+    }
+
+    .home-btn {
+        padding: 15px 25px;
+        background-color: rgb(255, 157, 0);
+        border-radius: 14px;
+        color: white;
+        font-family: Paperlogy;
+        font-weight: 500;
+        font-size: 16px;
+    }
+
+    @keyframes color-sweep {
+        to {
+            background-position: 0% 0;
+        }
+    }
+
+    .complete-text p {
+        background: linear-gradient(105deg,
+                #222 0%,
+                #222 50%,
+                #ccc 50%);
+        background-size: 220% 100%;
+        background-position: 100% 0;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        animation: color-sweep 1s ease forwards;
+    }
+
+    .complete-text p:nth-child(1) {
+        animation-delay: 0.5s;
+    }
+
+    .complete-text p:nth-child(2) {
+        animation-delay: 0.8s;
+    }
+
+    .check-icon {
+        width: 130px;
+        height: 130px;
+    }
+
+    .ring-gray {
+        stroke: #ccc;
+        stroke-width: 6;
+        fill: none;
+    }
+
+    .check-gray {
+        stroke: #ccc;
+        stroke-width: 7;
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+    }
+
+    .ring-color {
+        stroke: rgb(255, 157, 0);
+        stroke-width: 6;
+        fill: none;
+        stroke-dasharray: 295;
+        stroke-dashoffset: 295;
+        stroke-linecap: round;
+        transform-origin: center;
+        transform: rotate(-90deg);
+        animation: draw-ring 0.7s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    }
+
+    .check-color {
+        stroke: rgb(255, 157, 0);
+        stroke-width: 7;
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-dasharray: 85;
+        stroke-dashoffset: 85;
+        animation: draw-check 0.5s ease forwards 0.6s;
+    }
+
+    @keyframes draw-ring {
+        to {
+            stroke-dashoffset: 0;
+        }
+    }
+
+    @keyframes draw-check {
+        to {
+            stroke-dashoffset: 0;
+        }
+    }
+
+}

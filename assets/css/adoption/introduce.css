@@ -1,5 +1,9 @@
 @import url("../common/common.css");
 @import url("../common/font.css");
+html, body {
+  overflow-x: hidden;
+}
+
 .bnf_M1 {
   position: relative;
 }
@@ -53,10 +57,14 @@
 .intro-top {
   display: flex;
   justify-content: space-between;
-  width: 1420px;
+  max-width: 1420px;
+  width: 100%;
+  margin: 0 auto;
 }
 .intro-top .intro-image {
-  width: 50%;
+  width: 100%;
+  max-width: 908px;
+  height: auto;
 }
 .intro-top .dog-info {
   width: 30%;
@@ -64,8 +72,9 @@
 
 .intro-image > img {
   border-radius: 16px;
-  width: 908px;
-  height: 506px;
+  max-width: 908px;
+  width: 100%;
+  height: auto;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center 30%;
@@ -83,11 +92,12 @@
   padding: 30px;
   border-radius: 16px;
   border: 5px solid #333;
-  width: 150px;
+  max-width: 350px;
+  width: 100%;
   height: auto;
   font-family: MemomentKKukkukk;
   font-size: 28px;
-  height: 506px;
+  height: auto;
   color: rgb(58, 48, 46);
   line-height: 80px;
   box-shadow: 0 6px 5px rgba(0, 0, 0, 0.25);
@@ -123,9 +133,9 @@
 
 .info-text {
   color: rgb(58, 48, 46);
-  margin-top: 65px;
-  margin-bottom: 330px;
-  width: 1420px;
+  max-width: 1420px;
+  width: 100%;
+  margin: 65px auto 330px;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -143,7 +153,8 @@
   background-color: rgb(255, 234, 198);
   padding: 60px 40px;
   border-radius: 20px;
-  width: 998px;
+  max-width: 998px;
+  width: 100%;
   min-height: 268px;
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.25);
 }
@@ -174,7 +185,8 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  width: 1180px;
+  max-width: 1180px;
+  width: 100%;
   flex-wrap: wrap;
   gap: 120px;
   margin-bottom: 95px;
@@ -189,8 +201,9 @@
 }
 
 .introduce-submit > div > div {
-  width: 520px;
-  height: 380px;
+  height: auto;
+  max-width: 520px;
+  width: 100%;
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
@@ -243,7 +256,8 @@
   align-items: center;
   text-align: center;
   gap: 35px;
-  width: 928px;
+  width: 100%;
+  max-width: 928px;
   height: auto;
   background-color: rgb(243, 243, 243);
   padding: 55px;
@@ -468,4 +482,204 @@
   background-color: #FF9D00;
   color: white;
   border-color: #FF9D00;
+}
+
+/* =========================
+   Tablet (<= 1024px)
+   ========================= */
+@media (max-width: 1024px) {
+  .bnf_M1 > a > img {
+    transform: none;
+    height: clamp(220px, 35vw, 420px);
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+    display: block;
+  }
+  .section-header {
+    margin-top: 70px;
+    padding: 0 24px;
+  }
+  .section-header .section-title {
+    font-size: 52px;
+    margin-bottom: 36px;
+  }
+  .section-header .section-title > img {
+    top: -34px;
+    right: -40px;
+    width: 56px;
+    height: 52px;
+  }
+  .section-header > img {
+    margin-bottom: 44px;
+    max-width: 360px;
+    width: 100%;
+    height: auto;
+  }
+  .intro-top {
+    flex-direction: column;
+    gap: 28px;
+    padding: 0 24px;
+  }
+  .intro-image > img {
+    max-width: 100%;
+  }
+  .dog-info {
+    max-width: 100%;
+    width: 100%;
+    font-size: 22px;
+    line-height: 2.2;
+    padding: 24px;
+  }
+  .dog-info-icon {
+    top: 18px;
+    right: 14px;
+    width: 40px;
+    height: auto;
+  }
+  .info-text {
+    margin: 45px auto 180px;
+    gap: 70px;
+    padding: 0 24px;
+    font-size: 20px;
+    line-height: 1.9;
+  }
+  .info-box {
+    padding: 42px 26px;
+  }
+  .info-box span {
+    font-size: 26px;
+  }
+  .info-box p {
+    padding: 28px;
+  }
+  .introduce-submit {
+    gap: 60px;
+    padding: 0 24px;
+    margin-bottom: 70px;
+  }
+  .introduce-submit > div > div {
+    max-width: 520px;
+  }
+  .introduce-submit > div > h3 {
+    font-size: 24px;
+  }
+  .introduce-submit > div > p {
+    font-size: 18px;
+  }
+  .apply-btn {
+    font-size: 22px;
+    padding: 14px 26px;
+    margin-bottom: 140px;
+  }
+  .notice {
+    max-width: 92%;
+    padding: 38px 28px;
+    margin-bottom: 140px;
+  }
+  .notice-title {
+    font-size: 20px;
+  }
+  .notice-text {
+    font-size: 15px;
+    padding: 26px 22px;
+  }
+}
+.margin .bnf_M1 {
+  width: 100%;
+  max-width: 1420px;
+  margin: 0 auto 80px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.margin .bnf_M1 > a {
+  display: block;
+  position: relative;
+}
+
+.margin .bnf_M1 > a > img {
+  width: 100%;
+  height: clamp(220px, 35vw, 460px);
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  display: block;
+  transform: none;
+}
+
+.margin .bnf_M1 .text-box {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 1024px) {
+  .intro-top {
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+    padding: 0 24px;
+  }
+  .intro-top .dog-info {
+    align-self: center;
+    margin: 0 auto;
+  }
+  .margin .bnf_M1 > a > img {
+    height: clamp(200px, 32vw, 380px);
+  }
+}
+@media (max-width: 768px) {
+  .intro-top {
+    padding: 0 16px;
+    gap: 18px;
+  }
+  .intro-top .dog-info {
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto;
+  }
+  .margin .bnf_M1 > a > img {
+    height: clamp(180px, 45vw, 320px);
+  }
+}
+@media (max-width: 480px) {
+  .margin .bnf_M1 > a > img {
+    height: 220px;
+  }
+}
+.bnf_M1 img {
+  transform: none !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center 60% !important;
+     object-position: center 60% !important;
+}
+
+.bnf_M1 .text-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) !important;
+  width: 100%;
+  text-align: center;
+  pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  .bnf_M1 img {
+    -o-object-position: center 70% !important;
+       object-position: center 70% !important;
+  }
+}
+@media (max-width: 480px) {
+  .bnf_M1 img {
+    -o-object-position: center 75% !important;
+       object-position: center 75% !important;
+  }
 }/*# sourceMappingURL=introduce.css.map */

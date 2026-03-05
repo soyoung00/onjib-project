@@ -11,6 +11,7 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
     overflow: hidden;
+
 }
 
 .bnf_M1>p {
@@ -20,10 +21,9 @@
 
 .bnf_M1>p>img {
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: cover;
     display: block;
-
 }
 
 .bnf_M1>div,
@@ -207,9 +207,66 @@ footer b {
 
 
 
+
+
+@media (max-width:1420px) {
+
+
+    .bnf_M1 {
+        margin: 0px auto 150px;
+        max-width: 90%;
+        aspect-ratio: 1420 / 660;
+        height: auto;
+        overflow: hidden;
+        position: relative;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+        overflow: hidden;
+    }
+
+    .bnf_M1>p {
+        margin: 0;
+        height: 100%;
+    }
+
+    .bnf_M1>p>img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        display: block;
+
+    }
+
+    .bnf_M1>div,
+    .bnf_M1 .text-box {
+        margin: 0;
+        position: absolute;
+        bottom: 10%;
+        left: 10%;
+        font-size: 8vw;
+        font-weight: bold;
+        -webkit-text-stroke: 4px rgb(58, 48, 46);
+        color: white;
+        paint-order: stroke fill;
+        text-shadow: 0 7px 6px rgba(0, 0, 0, 0.3);
+        font-family: 'Hakgyoansim_PosterB';
+    }
+    .bnf_M1 .text-box .title{
+        font-size: 8vw;
+    }
+    .bnf_M1 .text-box .sub {
+        font-size: 4.5vw;
+        line-height: 1.4;
+    }
+}
+
+
+
+
 // ------------------------------------------------------
 // 모바일
 // ------------------------------------------------------
+
 
 @media screen and (max-width: 960px) {
     .side-menu {
@@ -336,12 +393,65 @@ footer b {
             right: 1% !important;
         }
     }
+
+
+     .bnf_M1 {
+        margin: 0px auto 60px;
+        max-width: 90%;
+        aspect-ratio: 1420 / 660;
+        height: auto;
+        overflow: hidden;
+        position: relative;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+        overflow: hidden;
+    }
+
+    .bnf_M1>p {
+        margin: 0;
+        height: 100%;
+    }
+
+    .bnf_M1>p>img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+
+    }
+
+    .bnf_M1>div,
+    .bnf_M1 a .text-box {
+        margin: 0;
+        position: absolute;
+        bottom: 10%;
+        left: 10%;
+        font-size: 8vw !important;
+        font-weight: bold;
+        -webkit-text-stroke: 4px rgb(58, 48, 46);
+        color: white;
+        paint-order: stroke fill;
+        text-shadow: 0 7px 6px rgba(0, 0, 0, 0.3);
+        font-family: 'Hakgyoansim_PosterB';
+    }
+    .text-box .title {
+        font-size: 8vw !important;
+        margin-bottom: 22px;
+    }
+    .text-box .sub {
+        font-size: 4.5vw;
+        line-height: 1.4;
+    }
 }
 
 
 // 윤서 - 마진 
 
-.margin{
-  margin-top: 200px;
-  margin-bottom: 200px;
+.margin {
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+* {
+    box-sizing: border-box;
 }
