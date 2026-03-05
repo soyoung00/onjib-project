@@ -1,45 +1,111 @@
+@charset "UTF-8";
 @import url(../css/common/common.css);
 @import url(../css/common/font.css);
+/* ===== Mobile First ===== */
 .location-under {
   max-width: 1420px;
   width: 100%;
   margin: 0 auto;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
+  padding: 60px 20px;
+  gap: 40px;
 }
 
 .contents {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 100%;
 }
+
 .contents img {
-  max-width: 750px;
+  width: 100%;
   height: auto;
+  display: block;
 }
 
 .adress {
-  width: 50%;
-  max-width: 610px;
-  height: auto;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
+
 .adress .brand-logo {
-  width: 168px;
-  height: 60px;
+  width: 130px;
+  height: auto;
+  margin-bottom: 36px;
 }
+
 .adress .adress-text {
   font-family: Paperlogy;
   font-weight: 400;
-  font-style: normal;
-  font-size: 24px;
+  font-size: 15px;
+  line-height: 1.8;
 }
+
 .adress p {
   display: flex;
   align-items: center;
-  margin-bottom: -20px;
+  gap: 16px;
+  padding: 20px 0;
   border-bottom: 1px solid rgb(65, 56, 55);
+}
+
+.adress p img {
+  width: 20px;
+  flex-shrink: 0;
+}
+
+/* ===== Tablet (768px~) ===== */
+@media (min-width: 768px) {
+  .location-under {
+    flex-direction: row;
+    padding: 100px 40px;
+    gap: 40px;
+    align-items: flex-start;
+  }
+  .contents {
+    flex: 1;
+  }
+  .adress {
+    flex: 1;
+  }
+  .adress .brand-logo {
+    width: 150px;
+    margin-bottom: 48px;
+  }
+  .adress .adress-text {
+    font-size: 18px;
+    line-height: 1.9;
+  }
+  .adress p {
+    gap: 24px;
+  }
+}
+/* ===== Desktop (1024px~) ===== */
+@media (min-width: 1024px) {
+  .location-under {
+    padding-top: 160px;
+    gap: 60px;
+    align-items: center;
+  }
+  .contents img {
+    max-width: 750px;
+    height: auto; /* 🔥 고정 높이 제거 */
+  }
+  .adress {
+    max-width: 610px;
+  }
+  .adress .brand-logo {
+    width: 168px;
+    height: 60px;
+    margin-bottom: 62px;
+  }
+  .adress .adress-text {
+    font-size: 24px;
+    line-height: 2;
+  }
+  .adress p {
+    gap: 38px;
+  }
 }/*# sourceMappingURL=location.css.map */
