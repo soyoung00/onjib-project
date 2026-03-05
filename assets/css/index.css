@@ -423,6 +423,12 @@ main .main-spot > div {
   }
 }
 @media screen and (max-width: 480px) {
+  .popup {
+    width: 100%;
+  }
+  .popup div:nth-of-type(1) img {
+    width: 100%;
+  }
   .mySwiper {
     width: 90%;
   }
