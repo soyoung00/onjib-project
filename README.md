@@ -32,7 +32,7 @@
 ------------------
 ## 🔗 배포 URL
 
-https://github.com/soyoung00/onjib-project.git
+[https://github.com/soyoung00/onjib-project.git](https://soyoung00.github.io/onjib-project/)
 
 ---------------
 ## 👩‍💻 팀원 및 역할
