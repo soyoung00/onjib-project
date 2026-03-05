@@ -192,6 +192,7 @@ footer b {
 
 
 .floating-btn {
+    display: block;
     position: fixed;
     right: 90px;
     bottom: 100px;
@@ -312,6 +313,7 @@ footer b {
 
 
     .floating-btn {
+        display: block;
         right: 3% !important;
     }
 
@@ -320,7 +322,17 @@ footer b {
 
 @media screen and (max-width: 480px) {
 
+    .floating-btn {
+        display: none;
+    }
+
+    .header-inner {
+        width: 90%;
+        overflow: hidden;
+    }
+
     .footer-inner {
+        width: 90%;
         align-items: flex-start;
         flex-direction: column;
 
@@ -341,7 +353,7 @@ footer b {
 
 // 윤서 - 마진 
 
-.margin{
-  margin-top: 200px;
-  margin-bottom: 200px;
+.margin {
+    margin-top: 200px;
+    margin-bottom: 200px;
 }

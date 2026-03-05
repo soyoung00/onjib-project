@@ -68,6 +68,15 @@ let loadHeader = function () {
     });
   });
 
+
+
+  const page = document.querySelectorAll('.page');
+
+  page.forEach(function (el) {
+    el.addEventListener('click', function () {
+      localStorage.setItem("currentPage", 1);
+    });
+  });
 }
 
 
@@ -149,7 +158,9 @@ let footerFun = function () {
 //공통 작업
 document.addEventListener("DOMContentLoaded", function () {
 
+
   hearderFun();
+
 
   floatFun();
 
