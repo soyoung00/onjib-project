@@ -41,6 +41,17 @@
     font-family: 'Hakgyoansim_PosterB';
 }
 
+.bnf_M1 .text-box .title {
+    font-size: 97.74px;
+    display: block;
+}
+
+.bnf_M1 .text-box .sub {
+    font-size: 40px;
+    line-height: 1.4;
+    font-weight: bold;
+}
+
 // ------------------------------------------------------
 // header
 // ------------------------------------------------------
@@ -252,9 +263,11 @@ footer b {
         text-shadow: 0 7px 6px rgba(0, 0, 0, 0.3);
         font-family: 'Hakgyoansim_PosterB';
     }
-    .bnf_M1 .text-box .title{
+
+    .bnf_M1 .text-box .title {
         font-size: 8vw;
     }
+
     .bnf_M1 .text-box .sub {
         font-size: 4.5vw;
         line-height: 1.4;
@@ -407,7 +420,7 @@ footer b {
     }
 
 
-     .bnf_M1 {
+    .bnf_M1 {
         margin: 0px auto 60px;
         max-width: 90%;
         aspect-ratio: 1420 / 660;
@@ -446,10 +459,12 @@ footer b {
         text-shadow: 0 7px 6px rgba(0, 0, 0, 0.3);
         font-family: 'Hakgyoansim_PosterB';
     }
+
     .text-box .title {
         font-size: 8vw !important;
         margin-bottom: 22px;
     }
+
     .text-box .sub {
         font-size: 4.5vw;
         line-height: 1.4;

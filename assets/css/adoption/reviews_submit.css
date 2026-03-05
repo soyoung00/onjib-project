@@ -6,48 +6,6 @@
   box-sizing: border-box;
 }
 
-.rvs_S1 {
-  margin: 0px auto 150px;
-  width: 100%;
-  max-width: 1420px;
-  position: relative;
-  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
-  border-radius: 20px;
-  overflow: hidden;
-}
-
-.rvs_S1 > p > img {
-  width: 100%;
-}
-
-.rvs_S1 > div {
-  position: absolute;
-  bottom: 50px;
-  left: 50px;
-}
-
-.rvs_S1 > div > div {
-  font-size: 97.74px;
-  font-weight: bold;
-  font-family: "Hakgyoansim_PosterB";
-  -webkit-text-stroke: 4px black;
-  color: white;
-  paint-order: stroke fill;
-  margin: 0;
-  text-shadow: 0 7px 6px rgba(0, 0, 0, 0.3);
-}
-
-.rvs_S1 > div > p {
-  font-size: 54px;
-  font-family: "Paperlogy";
-  font-weight: 400;
-  -webkit-text-stroke: 4px black;
-  color: white;
-  paint-order: stroke fill;
-  margin: 0;
-  text-shadow: 0 7px 6px rgba(0, 0, 0, 0.3);
-}
-
 .rvs_SBM2 {
   display: flex;
   flex-direction: column;
@@ -174,22 +132,6 @@
   .rvs_submit {
     padding: 230px 50px 130px;
   }
-  .rvs_S1 {
-    margin-bottom: 80px;
-  }
-  .rvs_S1 > div {
-    position: absolute;
-    bottom: 30px;
-    left: 30px;
-  }
-  .rvs_S1 > div > div {
-    font-size: 60px;
-    -webkit-text-stroke: 2px black;
-  }
-  .rvs_S1 > div > p {
-    font-size: 30px;
-    -webkit-text-stroke: 1px black;
-  }
   .rvs_SBM2 {
     padding-bottom: 30px;
   }
@@ -220,21 +162,6 @@
 @media (max-width: 768px) {
   .rvs_submit {
     padding: 230px 5% 100px;
-  }
-  .rvs_S1 {
-    margin-bottom: 50px;
-  }
-  .rvs_S1 > div {
-    bottom: 20px;
-    left: 20px;
-  }
-  .rvs_S1 > div > div {
-    font-size: 30px;
-    -webkit-text-stroke: 2px black;
-  }
-  .rvs_S1 > div > p {
-    font-size: 18px;
-    -webkit-text-stroke: 1px black;
   }
   .rvs_SBM2 {
     margin-bottom: 0;
