@@ -41,6 +41,17 @@
     font-family: 'Hakgyoansim_PosterB';
 }
 
+.bnf_M1 .text-box .title {
+    font-size: 97.74px;
+    display: block;
+}
+
+.bnf_M1 .text-box .sub {
+    font-size: 40px;
+    line-height: 1.4;
+    font-weight: bold;
+}
+
 // ------------------------------------------------------
 // header
 // ------------------------------------------------------
@@ -462,17 +473,8 @@ footer b {
 .margin {
     margin-top: 200px;
     margin-bottom: 200px;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> soyoung
 }
 
 * {
     box-sizing: border-box;
-<<<<<<< HEAD
-=======
->>>>>>> 57eb374bfbaa4abecbd5a6aaf3378167e89f079e
->>>>>>> soyoung
 }

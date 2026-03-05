@@ -40,6 +40,17 @@
   font-family: "Hakgyoansim_PosterB";
 }
 
+.bnf_M1 .text-box .title {
+  font-size: 97.74px;
+  display: block;
+}
+
+.bnf_M1 .text-box .sub {
+  font-size: 40px;
+  line-height: 1.4;
+  font-weight: bold;
+}
+
 header {
   width: 100%;
   position: fixed;
