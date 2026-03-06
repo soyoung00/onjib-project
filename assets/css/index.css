@@ -43,6 +43,7 @@ main .main-spot > div {
   height: 70vh;
   position: relative;
   border-radius: 20px;
+  overflow: hidden;
 }
 
 .mySwiper .swiper-slide {
@@ -51,6 +52,10 @@ main .main-spot > div {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.mySwiper .swiper-slide picture {
+  width: 100%;
+  height: 100%;
 }
 .mySwiper .swiper-slide img {
   display: block;
@@ -367,6 +372,12 @@ main .main-spot > div {
   opacity: 1;
 }
 
+@media screen and (max-width: 1441px) {
+  .adoption-list > div:nth-of-type(2) {
+    width: 700px;
+    justify-content: flex-start;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 960px) {
   .news-spot .swiper-button-prev {
     left: 3% !important;
@@ -410,6 +421,9 @@ main .main-spot > div {
   }
   .adoption-list figure > p {
     width: 100%;
+  }
+  .mySwiper {
+    width: 90%;
   }
   .mySwiperAdoption {
     padding: 0 40px;

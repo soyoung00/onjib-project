@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
+
     <base href="/onjib-project/" />
     <link rel="stylesheet" href="assets/css/index.css">
     <!-- Link Swiper's CSS -->
@@ -23,7 +23,7 @@
     <!-- 메인 -->
 
     <!------------------------ 헤더 ---------------------------->
-   
+
     <div id="site-header"></div>
 
     <main>
@@ -32,10 +32,34 @@
                 <!-- Swiper -->
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="assets/img/main/main-slide-img1.png" alt=""></div>
-                        <div class="swiper-slide"><img src="assets/img/main/main-slide-img2.png" alt=""></div>
-                        <div class="swiper-slide"><img src="assets/img/main/main-slide-img3.png" alt=""></div>
-                        <div class="swiper-slide"><img src="assets/img/main/main-slide-img4.png" alt=""></div>
+                        <div class="swiper-slide">
+                            <picture>
+                                <source media="(min-width: 768px)" srcset="assets/img/main/main-slide-img1.png">
+                                <source media="(min-width: 300px)" srcset="assets/img/main/main-slide-moblie1.png">
+                                <img src="assets/img/main/main-slide-img1.png" alt="People">
+                            </picture>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture>
+                                <source media="(min-width: 768px)" srcset="assets/img/main/main-slide-img2.png">
+                                <source media="(min-width: 300px)" srcset="assets/img/main/main-slide-moblie2.png">
+                                <img src="assets/img/main/main-slide-img2.png">
+                            </picture>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture>
+                                <source media="(min-width: 768px)" srcset="assets/img/main/main-slide-img3.png">
+                                <source media="(min-width: 300px)" srcset="assets/img/main/main-slide-moblie3.png">
+                                <img src="assets/img/main/main-slide-img3.png" alt="People">
+                            </picture>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture>
+                                <source media="(min-width: 768px)" srcset="assets/img/main/main-slide-img4.png">
+                                <source media="(min-width: 300px)" srcset="assets/img/main/main-slide-moblie4.png">
+                                <img src="assets/img/main/main-slide-img4.png" alt="People">
+                            </picture>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -72,15 +96,24 @@
                 <div class="slides">
                     <div class="swiper mySwiperNews">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide news"><a href="https://www.instagram.com/p/DVfBQNggfP_/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank"><img src="assets/img/main/news-img1.png"
-                                        alt=""></a></div>
-                            <div class="swiper-slide"><a href="https://www.instagram.com/p/DVfBWAGgayW/?utm_source=ig_web_copy_link" target="_blank"><img src="assets/img/main/news-img2.png" alt=""></a>
+                            <div class="swiper-slide news"><a
+                                    href="https://www.instagram.com/p/DVfBQNggfP_/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+                                    target="_blank"><img src="assets/img/main/news-img1.png" alt=""></a></div>
+                            <div class="swiper-slide"><a
+                                    href="https://www.instagram.com/p/DVfBWAGgayW/?utm_source=ig_web_copy_link"
+                                    target="_blank"><img src="assets/img/main/news-img2.png" alt=""></a>
                             </div>
-                            <div class="swiper-slide"><a href="https://www.instagram.com/p/DVfBalvATWI/?utm_source=ig_web_copy_link" target="_blank"><img src="assets/img/main/news-img3.png" alt=""></a>
+                            <div class="swiper-slide"><a
+                                    href="https://www.instagram.com/p/DVfBalvATWI/?utm_source=ig_web_copy_link"
+                                    target="_blank"><img src="assets/img/main/news-img3.png" alt=""></a>
                             </div>
-                            <div class="swiper-slide"><a href="https://www.instagram.com/p/DVfBgUigcP0/?utm_source=ig_web_copy_link" target="_blank"><img src="assets/img/main/news-img4.png" alt=""></a>
+                            <div class="swiper-slide"><a
+                                    href="https://www.instagram.com/p/DVfBgUigcP0/?utm_source=ig_web_copy_link"
+                                    target="_blank"><img src="assets/img/main/news-img4.png" alt=""></a>
                             </div>
-                            <div class="swiper-slide"><a href="https://www.instagram.com/p/DVfBjteAaBI/?utm_source=ig_web_copy_link" target="_blank"><img src="assets/img/main/news-img5.jpg" alt=""></a>
+                            <div class="swiper-slide"><a
+                                    href="https://www.instagram.com/p/DVfBjteAaBI/?utm_source=ig_web_copy_link"
+                                    target="_blank"><img src="assets/img/main/news-img5.jpg" alt=""></a>
                             </div>
                         </div>
                     </div>
@@ -95,7 +128,7 @@
                 <h2>
                     <img src="assets/img/main/heart.png" alt="">
                     <b>입양</b>을 기다려요
-                    <img src="assets/img/main/heart.png"alt="">
+                    <img src="assets/img/main/heart.png" alt="">
                 </h2>
                 <p>머무는 곳은 보호소지만 마음은 집을 향해 있어요</p>
             </div>
@@ -110,7 +143,8 @@
                 </figure> -->
             </div>
             <p class="ani main-line"><img src="assets/img/common/main-line.svg" alt=""></p>
-            <a href="./page/adoption/adoption.html" class="ani"><img  class="more-btn" src="./assets/img/main/more-btn.png" alt=""></a>
+            <a href="./page/adoption/adoption.html" class="ani"><img class="more-btn"
+                    src="./assets/img/main/more-btn.png" alt=""></a>
         </section>
     </main>
 
@@ -124,16 +158,16 @@
             <p>닫기</p>
         </div>
     </div>
-    
+
     <!------------------------ 플로팅 도구 ---------------------------->
 
-    
+
     <div id="floating-btn"></div>
 
     <!------------------------ 푸터 ---------------------------->
 
     <div id="site-footer"></div>
-    
+
 </body>
 
 </html>

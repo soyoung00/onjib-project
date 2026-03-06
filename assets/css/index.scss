@@ -63,6 +63,7 @@ main {
     height: 70vh;
     position: relative;
     border-radius: 20px;
+    overflow: hidden;
 }
 
 .mySwiper .swiper-slide {
@@ -71,6 +72,12 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    picture {
+        width: 100%;
+        height: 100%;
+
+    }
 
     img {
         display: block;
@@ -456,6 +463,18 @@ main {
 
 }
 
+@media screen and (max-width: 1441px) {
+
+
+    .adoption-list {
+        >div:nth-of-type(2) {
+            width: 700px;
+            justify-content: flex-start;
+
+        }
+    }
+}
+
 @media screen and (min-width:768px) and (max-width:960px) {
 
     // ------------------------------------------------------
@@ -536,6 +555,10 @@ main {
 
     }
 
+    .mySwiper {
+        width: 90%;
+    }
+
     .mySwiperAdoption {
         padding: 0 40px;
         overflow: hidden;
@@ -549,6 +572,8 @@ main {
         --swiper-theme-color: #FF9D00;
     }
 }
+
+
 
 @media screen and (max-width: 480px) {
 
