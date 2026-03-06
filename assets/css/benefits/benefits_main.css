@@ -20,14 +20,14 @@
 .bnf_M2 > h2 {
   font-size: 100px;
   color: #3A302E;
-  font-family: "Hakgyoansim_PosterB";
-  font-weight: 700;
+  font-family: "MemomentKkukkukk";
+  font-weight: lighter;
   position: absolute;
 }
 
 .paw {
   position: relative;
-  right: -205px;
+  right: -170px;
   top: -40px;
 }
 

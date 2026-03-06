@@ -83,7 +83,21 @@ async function init() {
             navHtml += `<li><a href="page/adoption/reviews.html?page=${currentPage+1}" class="next">&gt;</a></li>`;
             navUl.innerHTML = navHtml;
 
-            // 새로고침 방식이므로 클릭 시 그냥 링크 이동, JS 이벤트 필요 없음
+            const prevBtn = navUl.querySelector('.prev');
+            prevBtn.addEventListener('click', (e) => {
+                if (currentPage === 1) {
+                    e.preventDefault();
+                    alert('첫 페이지입니다.');
+                }
+            });
+
+            const nextBtn = navUl.querySelector('.next');
+            nextBtn.addEventListener('click', (e) => {
+                if (currentPage === totalPages) {
+                    e.preventDefault();
+                    alert('마지막 페이지입니다.');
+                }
+            });
 
             // 스크롤 애니메이션 적용
             animateOnScroll();
