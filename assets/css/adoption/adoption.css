@@ -19,14 +19,8 @@
   bottom: 120px;
 }
 
-.text-box .title {
-  font-size: 98px;
-  margin-bottom: 42px;
-  color: #fff;
-}
-
 .section-subtitle {
-  font-family: Paperlogy;
+  font-family: MemomentKKukkukk;
   font-weight: 700px;
   font-size: 36px;
   color: rgb(58, 48, 46);
@@ -239,9 +233,6 @@
   .text-box {
     left: 20px;
     bottom: 40px;
-  }
-  .text-box .title {
-    font-size: 36px;
   }
   .section-subtitle {
     font-size: 18px;

@@ -1,19 +1,8 @@
 @import url("../common/common.css");
 @import url("../common/font.css");
-html, body {
+html,
+body {
   overflow-x: hidden;
-}
-
-.bnf_M1 {
-  position: relative;
-}
-
-.bnf_M1 > a > img {
-  width: 100%;
-  height: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
-  transform: translateY(-90px);
 }
 
 .section-header {
@@ -173,6 +162,7 @@ html, body {
   background-color: #fff;
   border-radius: 16px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+  word-break: keep-all;
 }
 
 .info-box:nth-child(2) {
@@ -487,16 +477,7 @@ html, body {
 /* =========================
    Tablet (<= 1024px)
    ========================= */
-@media (max-width: 1024px) {
-  .bnf_M1 > a > img {
-    transform: none;
-    height: clamp(220px, 35vw, 420px);
-    -o-object-fit: cover;
-       object-fit: cover;
-    -o-object-position: center;
-       object-position: center;
-    display: block;
-  }
+@media (max-width: 1450px) {
   .section-header {
     margin-top: 70px;
     padding: 0 24px;
@@ -513,7 +494,6 @@ html, body {
   }
   .section-header > img {
     margin-bottom: 44px;
-    max-width: 360px;
     width: 100%;
     height: auto;
   }
@@ -586,21 +566,22 @@ html, body {
     padding: 26px 22px;
   }
 }
-@media (max-width: 1024px) {
+@media (max-width: 1450px) {
   .intro-top {
     flex-direction: column;
     align-items: center;
     gap: 28px;
     padding: 0 24px;
   }
-  .intro-top .dog-info {
-    align-self: center;
-    margin: 0 auto;
-  }
-  .margin .bnf_M1 > a > img {
-    height: clamp(200px, 32vw, 380px);
+  .info-text {
+    width: auto;
   }
 }
+.intro-top .dog-info {
+  align-self: center;
+  margin: 0 auto;
+}
+
 @media (max-width: 768px) {
   .intro-top {
     padding: 0 16px;
@@ -610,25 +591,5 @@ html, body {
     width: 100%;
     max-width: 360px;
     margin: 0 auto;
-  }
-  .margin .bnf_M1 > a > img {
-    height: clamp(180px, 45vw, 320px);
-  }
-}
-@media (max-width: 480px) {
-  .margin .bnf_M1 > a > img {
-    height: 220px;
-  }
-}
-@media (max-width: 768px) {
-  .bnf_M1 img {
-    -o-object-position: center 70% !important;
-       object-position: center 70% !important;
-  }
-}
-@media (max-width: 480px) {
-  .bnf_M1 img {
-    -o-object-position: center 75% !important;
-       object-position: center 75% !important;
   }
 }/*# sourceMappingURL=introduce.css.map */
