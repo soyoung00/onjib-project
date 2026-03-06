@@ -17,16 +17,18 @@
   height: 100%;
 }
 
-.bnf_M1 > p > img {
+.bnf_M1 img {
   width: 100%;
-  height: auto;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   display: block;
+  -o-object-position: center;
+     object-position: center;
 }
 
 .bnf_M1 > div,
-.bnf_M1 a .text-box {
+.bnf_M1 .text-box {
   margin: 0;
   position: absolute;
   bottom: 100px;
@@ -204,9 +206,9 @@ footer b {
     margin: 0;
     height: 100%;
   }
-  .bnf_M1 > p > img {
+  .bnf_M1 img {
     width: 100%;
-    height: auto;
+    height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
     display: block;
@@ -373,7 +375,7 @@ footer b {
   }
   .text-box .title {
     font-size: 8vw !important;
-    margin-bottom: 22px;
+    margin-bottom: 5%;
   }
   .text-box .sub {
     font-size: 4.5vw;
