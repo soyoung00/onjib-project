@@ -103,7 +103,9 @@
 }
 
 .intake_popup {
-  display: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: fixed;
   z-index: 1000;
   left: 0;
@@ -113,6 +115,7 @@
   background-color: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(5px);
   overflow-y: auto;
+  display: none;
 }
 
 .modal-content {
@@ -228,6 +231,22 @@
   .intake_M {
     padding: 230px 50px 130px;
   }
+  .rvs_S1 {
+    margin-bottom: 80px;
+  }
+  .rvs_S1 > div {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+  }
+  .rvs_S1 > div > div {
+    font-size: 60px;
+    -webkit-text-stroke: 2px black;
+  }
+  .rvs_S1 > div > p {
+    font-size: 30px;
+    -webkit-text-stroke: 1px black;
+  }
   .intake_1 {
     padding-bottom: 30px;
   }
@@ -251,13 +270,25 @@
     width: 45vw;
     height: auto;
   }
-  .modal-content {
-    margin: 25% auto;
-  }
 }
 @media (max-width: 768px) {
   .intake_M {
     padding: 230px 5% 100px;
+  }
+  .rvs_S1 {
+    margin-bottom: 50px;
+  }
+  .rvs_S1 > div {
+    bottom: 20px;
+    left: 20px;
+  }
+  .rvs_S1 > div > div {
+    font-size: 30px;
+    -webkit-text-stroke: 2px black;
+  }
+  .rvs_S1 > div > p {
+    font-size: 18px;
+    -webkit-text-stroke: 1px black;
   }
   .intake_1 {
     padding-bottom: 20px;
@@ -296,9 +327,6 @@
   .intake_3 > button {
     padding: 20px 30px;
     font-size: 24px;
-  }
-  .modal-content {
-    margin: 15% auto;
   }
   .floating-btn {
     display: none;

@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     if (openBtn && modal) {
         openBtn.addEventListener('click', function() {
-            modal.style.display = 'block';
+            modal.style.display = 'flex';
             document.body.style.overflow = 'hidden'; 
         });
     }
